@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Doctor - HealthConnect Forum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c7a7b;
+            --primary-light: #4fd1c5;
+            --secondary: #4a5568;
+            --light: #f7fafc;
+            --dark: #2d3748;
+            --danger: #e53e3e;
+            --success: #38a169;
+            --border: #e2e8f0;
+            --shadow: rgba(0, 0, 0, 0.1);
+            --rating: #f59e0b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .logo i {
+            font-size: 28px;
+            color: var(--primary-light);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .user-menu {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid var(--primary-light);
+        }
+
+        .user-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #2a6b6c;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-sm {
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            padding: 60px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Search Section */
+        .search-section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px var(--shadow);
+            margin: -30px auto 40px;
+            padding: 30px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .search-form {
+            display: grid;
+            grid-template-columns: 2fr 2fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .search-form .form-control {
+            padding: 12px 15px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .search-form button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-form button:hover {
+            background-color: #2a6b6c;
+        }
+
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .filter-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .filter-group select {
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 40px 0;
+        }
+
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 30px;
+        }
+
+        /* Sidebar Filters */
+        .sidebar {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 10px var(--shadow);
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+        }
+
+        .sidebar h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .filter-section {
+            margin-bottom: 25px;
+        }
+
+        .filter-section h4 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: var(--dark);
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .checkbox-item input {
+            margin: 0;
+        }
+
+        .checkbox-item label {
+            font-size: 14px;
+            color: var(--secondary);
+            cursor: pointer;
+        }
+
+        .price-range {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .price-range input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        /* Doctor Results */
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .results-count {
+            font-size: 18px;
+            color: var(--dark);
+        }
+
+        .sort-dropdown {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sort-dropdown select {
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .doctors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .doctor-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px var(--shadow);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px var(--shadow);
+        }
+
+        .doctor-card-header {
+            padding: 20px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .doctor-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .doctor-avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid var(--primary-light);
+        }
+
+        .doctor-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .doctor-details h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: var(--dark);
+        }
+
+        .doctor-specialty {
+            color: var(--primary);
+            font-weight: 500;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .doctor-rating {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+
+        .doctor-rating .stars {
+            display: flex;
+            gap: 2px;
+        }
+
+        .doctor-rating .stars i {
+            color: var(--rating);
+            font-size: 12px;
+        }
+
+        .verified-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background-color: #3182ce;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .doctor-card-body {
+            padding: 20px;
+        }
+
+        .doctor-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: var(--secondary);
+        }
+
+        .doctor-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .doctor-meta-item i {
+            color: var(--primary-light);
+            width: 16px;
+        }
+
+        .doctor-description {
+            color: var(--secondary);
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .doctor-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .doctor-actions .btn {
+            flex: 1;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* Booking Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 50px auto;
+            padding: 0;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-header {
+            padding: 20px 25px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .close {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--secondary);
+        }
+
+        .modal-body {
+            padding: 25px;
+        }
+
+        .booking-doctor-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background-color: var(--light);
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        .booking-doctor-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .booking-doctor-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .booking-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-group label {
+            font-weight: 500;
+            color: var(--dark);
+        }
+
+        .form-control {
+            padding: 12px 15px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(79, 209, 197, 0.2);
+        }
+
+        .time-slots {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .time-slot {
+            padding: 10px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .time-slot:hover {
+            border-color: var(--primary);
+            background-color: rgba(79, 209, 197, 0.05);
+        }
+
+        .time-slot.selected {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .time-slot.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .booking-summary {
+            background-color: var(--light);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .booking-summary h4 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .summary-row:last-child {
+            margin-bottom: 0;
+            padding-top: 10px;
+            border-top: 1px solid var(--border);
+            font-weight: 500;
+        }
+
+        /* Success Message */
+        .success-message {
+            background-color: var(--success);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-column h4 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-column h4::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--primary-light);
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column a {
+            color: #cbd5e0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-column a:hover {
+            color: var(--primary-light);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #4a5568;
+            color: #a0aec0;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .content-wrapper {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                position: static;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .search-form {
+                grid-template-columns: 1fr;
+            }
+            
+            .doctors-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .time-slots {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .modal-content {
+                width: 95%;
+                margin: 20px auto;
+            }
+            
+            .booking-doctor-info {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>HealthConnect</span>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                        <li><a href="index.html">Resources</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="user-menu">
+                    <div class="user-avatar">
+                        <img src="https://picsum.photos/seed/userprofile/100/100.jpg" alt="User">
+                    </div>
+                    <a href="profile.html" class="btn btn-outline">My Profile</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Find the Right Doctor for You</h1>
+            <p>Search from thousands of verified healthcare professionals and book appointments instantly</p>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <form class="search-form" id="searchForm">
+                <input type="text" class="form-control" placeholder="Search by doctor name, specialty, or condition" id="searchInput">
+                <input type="text" class="form-control" placeholder="Enter location or hospital name" id="locationInput">
+                <button type="submit">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </form>
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="specialtyFilter">Specialty:</label>
+                    <select id="specialtyFilter">
+                        <option value="">All Specialties</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="dermatology">Dermatology</option>
+                        <option value="neurology">Neurology</option>
+                        <option value="pediatrics">Pediatrics</option>
+                        <option value="orthopedics">Orthopedics</option>
+                        <option value="gynecology">Gynecology</option>
+                        <option value="psychiatry">Psychiatry</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="availabilityFilter">Availability:</label>
+                    <select id="availabilityFilter">
+                        <option value="">Any Time</option>
+                        <option value="today">Today</option>
+                        <option value="tomorrow">Tomorrow</option>
+                        <option value="this-week">This Week</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="genderFilter">Gender:</label>
+                    <select id="genderFilter">
+                        <option value="">Any</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Sidebar Filters -->
+                <aside class="sidebar">
+                    <h3><i class="fas fa-filter"></i> Filters</h3>
+                    
+                    <div class="filter-section">
+                        <h4>Doctor Type</h4>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="general-practitioner" value="general-practitioner">
+                                <label for="general-practitioner">General Practitioner</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="specialist" value="specialist">
+                                <label for="specialist">Specialist</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="surgeon" value="surgeon">
+                                <label for="surgeon">Surgeon</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h4>Experience</h4>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="exp-0-5" value="0-5">
+                                <label for="exp-0-5">0-5 years</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="exp-5-10" value="5-10">
+                                <label for="exp-5-10">5-10 years</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="exp-10-20" value="10-20">
+                                <label for="exp-10-20">10-20 years</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="exp-20plus" value="20plus">
+                                <label for="exp-20plus">20+ years</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h4>Rating</h4>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="rating-4plus" value="4plus">
+                                <label for="rating-4plus">4+ Stars</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="rating-3plus" value="3plus">
+                                <label for="rating-3plus">3+ Stars</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h4>Consultation Fee</h4>
+                        <div class="price-range">
+                            <input type="number" placeholder="Min" id="minFee">
+                            <span>to</span>
+                            <input type="number" placeholder="Max" id="maxFee">
+                        </div>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h4>Availability</h4>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="available-today" value="today">
+                                <label for="available-today">Available Today</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="available-tomorrow" value="tomorrow">
+                                <label for="available-tomorrow">Available Tomorrow</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="online-consultation" value="online">
+                                <label for="online-consultation">Online Consultation</label>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Doctor Results -->
+                <main class="results">
+                    <div class="results-header">
+                        <div class="results-count">
+                            Showing <span id="resultCount">24</span> doctors near you
+                        </div>
+                        <div class="sort-dropdown">
+                            <label for="sortBy">Sort by:</label>
+                            <select id="sortBy">
+                                <option value="relevance">Relevance</option>
+                                <option value="rating">Highest Rated</option>
+                                <option value="experience">Most Experienced</option>
+                                <option value="distance">Nearest</option>
+                                <option value="fee-low">Fee: Low to High</option>
+                                <option value="fee-high">Fee: High to Low</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="doctors-grid" id="doctorsGrid">
+                        <!-- Doctor Card 1 -->
+                        <div class="doctor-card">
+                            <div class="doctor-card-header">
+                                <div class="doctor-info">
+                                    <div class="doctor-avatar">
+                                        <img src="https://picsum.photos/seed/doctor1/200/200.jpg" alt="Dr. Sarah Johnson">
+                                    </div>
+                                    <div class="doctor-details">
+                                        <h3>Dr. Sarah Johnson</h3>
+                                        <div class="doctor-specialty">Dermatologist</div>
+                                        <div class="doctor-rating">
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span>4.8 (127 reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified-badge">
+                                    <i class="fas fa-check"></i> Verified
+                                </div>
+                            </div>
+                            <div class="doctor-card-body">
+                                <div class="doctor-meta">
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-hospital"></i>
+                                        <span>SF Medical Center</span>
+                                    </div>
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>2.5 km away</span>
+                                    </div>
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        <span>12 years experience</span>
+                                    </div>
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <span>$150 - $300</span>
+                                    </div>
+                                </div>
+                                <div class="doctor-description">
+                                    Board-certified dermatologist specializing in medical and cosmetic dermatology. Expert in treating skin conditions and performing advanced cosmetic procedures.
+                                </div>
+                                <div class="doctor-actions">
+                                    <button class="btn btn-primary" onclick="openBookingModal('Dr. Sarah Johnson', 'Dermatologist', 'https://picsum.photos/seed/doctor1/200/200.jpg')">
+                                        <i class="fas fa-calendar-alt"></i> Book Now
+                                    </button>
+                                    <button class="btn btn-outline">
+                                        <i class="fas fa-video"></i> Video Call
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Doctor Card 2 -->
+                        <div class="doctor-card">
+                            <div class="doctor-card-header">
+                                <div class="doctor-info">
+                                    <div class="doctor-avatar">
+                                        <img src="https://picsum.photos/seed/doctor2/200/200.jpg" alt="Dr. Michael Chen">
+                                    </div>
+                                    <div class="doctor-details">
+                                        <h3>Dr. Michael Chen</h3>
+                                        <div class="doctor-specialty">Cardiologist</div>
+                                        <div class="doctor-rating">
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span>4.9 (89 reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified-badge">
+                                    <i class="fas fa-check"></i> Verified
+                                </div>
+                            </div>
+                            <div class="doctor-card-body">
+                                <div class="doctor-meta">
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-hospital"></i>
+                                        <span>Heart Care Institute</span>
+                                    </div>
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>1.8 km away</span>
+                                    </div>
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        <span>15 years experience</span>
+                                    </div>
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <span>$200 - $400</span>
+                                    </div>
+                                </div>
+                                <div class="doctor-description">
+                                    Leading cardiologist with expertise in interventional cardiology and preventive heart care. Dedicated to providing comprehensive cardiovascular services.
+                                </div>
+                                <div class="doctor-actions">
+                                    <button class="btn btn-primary" onclick="openBookingModal('Dr. Michael Chen', 'Cardiologist', 'https://picsum.photos/seed/doctor2/200/200.jpg')">
+                                        <i class="fas fa-calendar-alt"></i> Book Now
+                                    </button>
+                                    <button class="btn btn-outline">
+                                        <i class="fas fa-video"></i> Video Call
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Doctor Card 3 -->
+                        <div class="doctor-card">
+                            <div class="doctor-card-header">
+                                <div class="doctor-info">
+                                    <div class="doctor-avatar">
+                                        <img src="https://picsum.photos/seed/doctor3/200/200.jpg" alt="Dr. Emily Rodriguez">
+                                    </div>
+                                    <div class="doctor-details">
+                                        <h3>Dr. Emily Rodriguez</h3>
+                                        <div class="doctor-specialty">Pediatrician</div>
+                                        <div class="doctor-rating">
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span>4.7 (156 reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified-badge">
+                                    <i class="fas fa-check"></i> Verified
+                                </div>
+                            </div>
+                            <div class="doctor-card-body">
+                                <div class="doctor-meta">
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-hospital"></i>
+                                        <span>Children's Medical Center</span>
+                                    </div>
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>3.2 km away</span>
+                                    </div>
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        <span>10 years experience</span>
+                                    </div>
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <span>$120 - $250</span>
+                                    </div>
+                                </div>
+                                <div class="doctor-description">
+                                    Compassionate pediatrician dedicated to providing comprehensive healthcare for children from infancy through adolescence. Specializes in developmental pediatrics.
+                                </div>
+                                <div class="doctor-actions">
+                                    <button class="btn btn-primary" onclick="openBookingModal('Dr. Emily Rodriguez', 'Pediatrician', 'https://picsum.photos/seed/doctor3/200/200.jpg')">
+                                        <i class="fas fa-calendar-alt"></i> Book Now
+                                    </button>
+                                    <button class="btn btn-outline">
+                                        <i class="fas fa-video"></i> Video Call
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Doctor Card 4 -->
+                        <div class="doctor-card">
+                            <div class="doctor-card-header">
+                                <div class="doctor-info">
+                                    <div class="doctor-avatar">
+                                        <img src="https://picsum.photos/seed/doctor4/200/200.jpg" alt="Dr. James Wilson">
+                                    </div>
+                                    <div class="doctor-details">
+                                        <h3>Dr. James Wilson</h3>
+                                        <div class="doctor-specialty">Neurologist</div>
+                                        <div class="doctor-rating">
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span>4.9 (98 reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified-badge">
+                                    <i class="fas fa-check"></i> Verified
+                                </div>
+                            </div>
+                            <div class="doctor-card-body">
+                                <div class="doctor-meta">
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-hospital"></i>
+                                        <span>Neurology Associates</span>
+                                    </div>
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>4.1 km away</span>
+                                    </div>
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        <span>18 years experience</span>
+                                    </div>
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <span>$250 - $500</span>
+                                    </div>
+                                </div>
+                                <div class="doctor-description">
+                                    Expert neurologist specializing in movement disorders, epilepsy, and neuromuscular diseases. Committed to providing cutting-edge neurological care.
+                                </div>
+                                <div class="doctor-actions">
+                                    <button class="btn btn-primary" onclick="openBookingModal('Dr. James Wilson', 'Neurologist', 'https://picsum.photos/seed/doctor4/200/200.jpg')">
+                                        <i class="fas fa-calendar-alt"></i> Book Now
+                                    </button>
+                                    <button class="btn btn-outline">
+                                        <i class="fas fa-video"></i> Video Call
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Doctor Card 5 -->
+                        <div class="doctor-card">
+                            <div class="doctor-card-header">
+                                <div class="doctor-info">
+                                    <div class="doctor-avatar">
+                                        <img src="https://picsum.photos/seed/doctor5/200/200.jpg" alt="Dr. Lisa Thompson">
+                                    </div>
+                                    <div class="doctor-details">
+                                        <h3>Dr. Lisa Thompson</h3>
+                                        <div class="doctor-specialty">Gynecologist</div>
+                                        <div class="doctor-rating">
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span>4.6 (112 reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified-badge">
+                                    <i class="fas fa-check"></i> Verified
+                                </div>
+                            </div>
+                            <div class="doctor-card-body">
+                                <div class="doctor-meta">
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-hospital"></i>
+                                        <span>Women's Health Center</span>
+                                    </div>
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>2.9 km away</span>
+                                    </div>
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        <span>14 years experience</span>
+                                    </div>
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <span>$180 - $350</span>
+                                    </div>
+                                </div>
+                                <div class="doctor-description">
+                                    Experienced gynecologist providing comprehensive women's healthcare services. Specializes in minimally invasive surgeries and reproductive health.
+                                </div>
+                                <div class="doctor-actions">
+                                    <button class="btn btn-primary" onclick="openBookingModal('Dr. Lisa Thompson', 'Gynecologist', 'https://picsum.photos/seed/doctor5/200/200.jpg')">
+                                        <i class="fas fa-calendar-alt"></i> Book Now
+                                    </button>
+                                    <button class="btn btn-outline">
+                                        <i class="fas fa-video"></i> Video Call
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Doctor Card 6 -->
+                        <div class="doctor-card">
+                            <div class="doctor-card-header">
+                                <div class="doctor-info">
+                                    <div class="doctor-avatar">
+                                        <img src="https://picsum.photos/seed/doctor6/200/200.jpg" alt="Dr. Robert Davis">
+                                    </div>
+                                    <div class="doctor-details">
+                                        <h3>Dr. Robert Davis</h3>
+                                        <div class="doctor-specialty">Orthopedic Surgeon</div>
+                                        <div class="doctor-rating">
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <span>4.7 (143 reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified-badge">
+                                    <i class="fas fa-check"></i> Verified
+                                </div>
+                            </div>
+                            <div class="doctor-card-body">
+                                <div class="doctor-meta">
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-hospital"></i>
+                                        <span>Bone & Joint Clinic</span>
+                                    </div>
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>3.7 km away</span>
+                                    </div>
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        <span>16 years experience</span>
+                                    </div>
+                                    <div class="doctor-meta-item">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <span>$300 - $600</span>
+                                    </div>
+                                </div>
+                                <div class="doctor-description">
+                                    Board-certified orthopedic surgeon specializing in joint replacement and sports medicine. Utilizes advanced surgical techniques for optimal patient outcomes.
+                                </div>
+                                <div class="doctor-actions">
+                                    <button class="btn btn-primary" onclick="openBookingModal('Dr. Robert Davis', 'Orthopedic Surgeon', 'https://picsum.photos/seed/doctor6/200/200.jpg')">
+                                        <i class="fas fa-calendar-alt"></i> Book Now
+                                    </button>
+                                    <button class="btn btn-outline">
+                                        <i class="fas fa-video"></i> Video Call
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Book Appointment</h2>
+                <button class="close" onclick="closeBookingModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="success-message" id="bookingSuccess">
+                    <i class="fas fa-check-circle"></i> Your appointment has been booked successfully! You will receive a confirmation email shortly.
+                </div>
+
+                <div class="booking-doctor-info" id="bookingDoctorInfo">
+                    <!-- Doctor info will be populated by JavaScript -->
+                </div>
+
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-group">
+                        <label for="appointmentDate">Select Date</label>
+                        <input type="date" class="form-control" id="appointmentDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Available Time Slots</label>
+                        <div class="time-slots" id="timeSlots">
+                            <div class="time-slot" onclick="selectTimeSlot(this)">09:00 AM</div>
+                            <div class="time-slot" onclick="selectTimeSlot(this)">10:00 AM</div>
+                            <div class="time-slot" onclick="selectTimeSlot(this)">11:00 AM</div>
+                            <div class="time-slot disabled">12:00 PM</div>
+                            <div class="time-slot" onclick="selectTimeSlot(this)">02:00 PM</div>
+                            <div class="time-slot" onclick="selectTimeSlot(this)">03:00 PM</div>
+                            <div class="time-slot" onclick="selectTimeSlot(this)">04:00 PM</div>
+                            <div class="time-slot" onclick="selectTimeSlot(this)">05:00 PM</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="appointmentType">Appointment Type</label>
+                        <select class="form-control" id="appointmentType" required>
+                            <option value="">Select appointment type</option>
+                            <option value="in-person">In-Person Visit</option>
+                            <option value="video">Video Consultation</option>
+                            <option value="phone">Phone Consultation</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="patientName">Patient Name</label>
+                        <input type="text" class="form-control" id="patientName" placeholder="Enter patient name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="patientAge">Patient Age</label>
+                        <input type="number" class="form-control" id="patientAge" placeholder="Enter patient age" min="0" max="120" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="patientPhone">Phone Number</label>
+                        <input type="tel" class="form-control" id="patientPhone" placeholder="Enter phone number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reasonForVisit">Reason for Visit</label>
+                        <textarea class="form-control" id="reasonForVisit" rows="3" placeholder="Briefly describe the reason for your visit" required></textarea>
+                    </div>
+
+                    <div class="booking-summary">
+                        <h4>Booking Summary</h4>
+                        <div class="summary-row">
+                            <span>Doctor:</span>
+                            <span id="summaryDoctor">-</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Date:</span>
+                            <span id="summaryDate">-</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Time:</span>
+                            <span id="summaryTime">-</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Type:</span>
+                            <span id="summaryType">-</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Consultation Fee:</span>
+                            <span id="summaryFee">-</span>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Confirm Booking</button>
+                        <button type="button" class="btn btn-outline" onclick="closeBookingModal()">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>About HealthConnect</h4>
+                    <p>We're a community-driven platform dedicated to empowering individuals with knowledge and support for their health journeys.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                        <li><a href="index.html">Resources</a></li>
+                        <li><a href="index.html">Health Professionals</a></li>
+                        <li><a href="index.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Health Topics</h4>
+                    <ul>
+                        <li><a href="#">Mental Health</a></li>
+                        <li><a href="#">Nutrition & Diet</a></li>
+                        <li><a href="#">Fitness & Exercise</a></li>
+                        <li><a href="#">Chronic Conditions</a></li>
+                        <li><a href="#">Preventive Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Medical Disclaimer</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 HealthConnect Forum. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Global variables
+        let selectedTimeSlot = null;
+        let currentDoctor = null;
+
+        // Search form submission
+        document.getElementById('searchForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const searchTerm = document.getElementById('searchInput').value;
+            const location = document.getElementById('locationInput').value;
+            
+            // In a real application, this would filter the results
+            // For now, we'll just show an alert
+            console.log('Searching for:', searchTerm, 'in', location);
+            
+            // Update result count (simulated)
+            document.getElementById('resultCount').textContent = '18';
+        });
+
+        // Filter change handlers
+        document.querySelectorAll('.filter-group input, .filter-group select').forEach(filter => {
+            filter.addEventListener('change', function() {
+                // In a real application, this would filter the results
+                console.log('Filter changed:', this.value);
+                
+                // Update result count (simulated)
+                const count = Math.floor(Math.random() * 20) + 5;
+                document.getElementById('resultCount').textContent = count;
+            });
+        });
+
+        // Sort change handler
+        document.getElementById('sortBy').addEventListener('change', function() {
+            // In a real application, this would sort the results
+            console.log('Sort by:', this.value);
+        });
+
+        // Open booking modal
+        function openBookingModal(doctorName, specialty, avatar) {
+            currentDoctor = { name: doctorName, specialty: specialty, avatar: avatar };
+            
+            // Populate doctor info
+            document.getElementById('bookingDoctorInfo').innerHTML = `
+                <div class="booking-doctor-avatar">
+                    <img src="${avatar}" alt="${doctorName}">
+                </div>
+                <div>
+                    <h3>${doctorName}</h3>
+                    <p>${specialty}</p>
+                </div>
+            `;
+            
+            // Set minimum date to today
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('appointmentDate').min = today;
+            
+            // Reset form
+            document.getElementById('bookingForm').reset();
+            document.getElementById('bookingSuccess').classList.remove('show');
+            selectedTimeSlot = null;
+            
+            // Reset time slots
+            document.querySelectorAll('.time-slot').forEach(slot => {
+                slot.classList.remove('selected');
+            });
+            
+            // Show modal
+            document.getElementById('bookingModal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close booking modal
+        function closeBookingModal() {
+            document.getElementById('bookingModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Select time slot
+        function selectTimeSlot(element) {
+            if (element.classList.contains('disabled')) return;
+            
+            // Remove selected class from all slots
+            document.querySelectorAll('.time-slot').forEach(slot => {
+                slot.classList.remove('selected');
+            });
+            
+            // Add selected class to clicked slot
+            element.classList.add('selected');
+            selectedTimeSlot = element.textContent;
+            
+            // Update summary
+            updateBookingSummary();
+        }
+
+        // Update booking summary
+        function updateBookingSummary() {
+            if (!currentDoctor) return;
+            
+            document.getElementById('summaryDoctor').textContent = currentDoctor.name;
+            
+            const date = document.getElementById('appointmentDate').value;
+            if (date) {
+                const formattedDate = new Date(date).toLocaleDateString('en-US', {
+                    weekday: 'long',
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                });
+                document.getElementById('summaryDate').textContent = formattedDate;
+            }
+            
+            document.getElementById('summaryTime').textContent = selectedTimeSlot || '-';
+            
+            const type = document.getElementById('appointmentType').value;
+            const typeText = type ? type.charAt(0).toUpperCase() + type.slice(1).replace('-', ' ') : '-';
+            document.getElementById('summaryType').textContent = typeText;
+            
+            // Simulate fee based on specialty
+            const fees = {
+                'Dermatologist': '$150 - $300',
+                'Cardiologist': '$200 - $400',
+                'Pediatrician': '$120 - $250',
+                'Neurologist': '$250 - $500',
+                'Gynecologist': '$180 - $350',
+                'Orthopedic Surgeon': '$300 - $600'
+            };
+            document.getElementById('summaryFee').textContent = fees[currentDoctor.specialty] || '$100 - $500';
+        }
+
+        // Handle form inputs change
+        document.getElementById('appointmentDate').addEventListener('change', updateBookingSummary);
+        document.getElementById('appointmentType').addEventListener('change', updateBookingSummary);
+
+        // Booking form submission
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Validate time slot selection
+            if (!selectedTimeSlot) {
+                alert('Please select a time slot');
+                return;
+            }
+            
+            // Show success message
+            document.getElementById('bookingSuccess').classList.add('show');
+            
+            // Scroll to top of modal
+            document.querySelector('.modal-body').scrollTo({ top: 0, behavior: 'smooth' });
+            
+            // Close modal after 3 seconds
+            setTimeout(() => {
+                closeBookingModal();
+            }, 3000);
+        });
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('bookingModal');
+            if (event.target === modal) {
+                closeBookingModal();
+            }
+        }
+    </script>
+</body>
+</html>
