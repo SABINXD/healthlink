@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthConnect Forum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c7a7b;
+            --primary-light: #4fd1c5;
+            --secondary: #4a5568;
+            --light: #f7fafc;
+            --dark: #2d3748;
+            --danger: #e53e3e;
+            --success: #38a169;
+            --border: #e2e8f0;
+            --shadow: rgba(0, 0, 0, 0.1);
+            --ai-bg: #f0f9ff;
+            --ai-border: #bfdbfe;
+            --doctor-bg: #f0fdf4;
+            --doctor-border: #bbf7d0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .logo i {
+            font-size: 28px;
+            color: var(--primary-light);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .user-menu {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #2a6b6c;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #e6fffa 0%, #f0fff4 100%);
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--secondary);
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .search-bar {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 15px 50px 15px 20px;
+            border-radius: 50px;
+            border: 1px solid var(--border);
+            font-size: 16px;
+            box-shadow: 0 2px 10px var(--shadow);
+        }
+
+        .search-bar button {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: flex;
+            gap: 30px;
+            padding: 30px 0;
+        }
+
+        .content-area {
+            flex: 3;
+        }
+
+        .sidebar {
+            flex: 1;
+        }
+
+        .section-title {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title i {
+            color: var(--primary-light);
+        }
+
+        /* Categories */
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .category {
+            background-color: white;
+            border: 1px solid var(--border);
+            border-radius: 30px;
+            padding: 8px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .category:hover, .category.active {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* Post Form */
+        .post-form {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 10px var(--shadow);
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border 0.3s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .image-upload {
+            border: 2px dashed var(--border);
+            border-radius: 6px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .image-upload:hover {
+            border-color: var(--primary);
+            background-color: rgba(79, 209, 197, 0.05);
+        }
+
+        .image-upload i {
+            font-size: 48px;
+            color: var(--primary-light);
+            margin-bottom: 10px;
+        }
+
+        .image-preview {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .image-preview-item {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .image-preview-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image-preview-item .remove {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Posts */
+        .posts {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .post {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 10px var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px var(--shadow);
+        }
+
+        .post-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .post-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 5px;
+        }
+
+        .post-meta {
+            display: flex;
+            gap: 15px;
+            color: var(--secondary);
+            font-size: 14px;
+        }
+
+        .post-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .post-meta i {
+            color: var(--primary-light);
+        }
+
+        .post-content {
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .post-images {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .post-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .post-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .post-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            background-color: #edf2f7;
+            color: var(--secondary);
+            border-radius: 20px;
+            padding: 4px 12px;
+            font-size: 12px;
+        }
+
+        .post-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .action-btn {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: var(--secondary);
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .action-btn:hover {
+            color: var(--primary);
+        }
+
+        .action-btn i {
+            font-size: 18px;
+        }
+
+        /* Post Detail Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 30px auto;
+            padding: 0;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 900px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-header {
+            padding: 20px 25px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .close {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--secondary);
+        }
+
+        .modal-body {
+            padding: 25px;
+        }
+
+        .post-detail {
+            margin-bottom: 30px;
+        }
+
+        .post-detail-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .post-detail-title {
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 10px;
+        }
+
+        .post-detail-meta {
+            display: flex;
+            gap: 15px;
+            color: var(--secondary);
+            font-size: 14px;
+        }
+
+        .post-detail-content {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .post-detail-images {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .post-detail-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .post-detail-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* AI Summary Section */
+        .ai-summary {
+            background-color: var(--ai-bg);
+            border: 1px solid var(--ai-border);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .ai-summary-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .ai-summary-header h3 {
+            font-size: 20px;
+            color: var(--dark);
+        }
+
+        .ai-summary-header i {
+            color: #3b82f6;
+            font-size: 24px;
+        }
+
+        .ai-summary-content {
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--dark);
+        }
+
+        /* AI Condition Suggestions */
+        .ai-conditions {
+            background-color: #fffbeb;
+            border: 1px solid #fcd34d;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .ai-conditions-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .ai-conditions-header h3 {
+            font-size: 20px;
+            color: var(--dark);
+        }
+
+        .ai-conditions-header i {
+            color: #f59e0b;
+            font-size: 24px;
+        }
+
+        .condition-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .condition-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: white;
+            border-radius: 8px;
+            border: 1px solid #fde68a;
+        }
+
+        .condition-name {
+            font-weight: 500;
+            color: var(--dark);
+        }
+
+        .condition-percentage {
+            background-color: #fde68a;
+            color: #92400e;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* Doctor Section */
+        .doctor-section {
+            background-color: var(--doctor-bg);
+            border: 1px solid var(--doctor-border);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .doctor-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .doctor-header h3 {
+            font-size: 20px;
+            color: var(--dark);
+        }
+
+        .doctor-header i {
+            color: var(--success);
+            font-size: 24px;
+        }
+
+        .doctor-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .doctor-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 5px var(--shadow);
+            transition: transform 0.3s;
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .doctor-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+
+        .doctor-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid var(--doctor-border);
+        }
+
+        .doctor-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .doctor-details h4 {
+            font-size: 16px;
+            margin-bottom: 3px;
+            color: var(--dark);
+        }
+
+        .doctor-details p {
+            font-size: 14px;
+            color: var(--secondary);
+        }
+
+        .doctor-specialty {
+            display: inline-block;
+            background-color: #dcfce7;
+            color: #166534;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .doctor-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-small {
+            padding: 5px 10px;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+
+        /* Sidebar */
+        .sidebar-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px var(--shadow);
+            margin-bottom: 25px;
+        }
+
+        .sidebar-card h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .trending-list {
+            list-style: none;
+        }
+
+        .trending-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .trending-list li:last-child {
+            border-bottom: none;
+        }
+
+        .trending-list a {
+            text-decoration: none;
+            color: var(--dark);
+            flex: 1;
+        }
+
+        .trending-list a:hover {
+            color: var(--primary);
+        }
+
+        .trending-number {
+            background-color: var(--primary-light);
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        /* Disclaimer */
+        .disclaimer {
+            background-color: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 30px;
+        }
+
+        .disclaimer h3 {
+            color: #b45309;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .disclaimer p {
+            color: #78350f;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-column h4 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-column h4::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--primary-light);
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column a {
+            color: #cbd5e0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-column a:hover {
+            color: var(--primary-light);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #4a5568;
+            color: #a0aec0;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .main-content {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                order: -1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+            
+            .modal-content {
+                width: 95%;
+                margin: 20px auto;
+            }
+            
+            .doctor-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .post-form {
+                padding: 15px;
+            }
+            
+            .post {
+                padding: 15px;
+            }
+            
+            .post-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>HealthConnect</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="user-menu">
+                    <button class="btn btn-outline">Sign In</button>
+                    <button class="btn btn-primary">Register</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Health Community Forum</h1>
+            <p>Ask questions, share experiences, and connect with others on your health journey</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for health topics, conditions, or advice...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-content">
+            <!-- Content Area -->
+            <div class="content-area">
+                <h2 class="section-title">
+                    <i class="fas fa-comments"></i>
+                    Health Discussions
+                </h2>
+                
+                <!-- Categories -->
+                <div class="categories">
+                    <div class="category active">All Topics</div>
+                    <div class="category">Mental Health</div>
+                    <div class="category">Nutrition</div>
+                    <div class="category">Fitness</div>
+                    <div class="category">Chronic Conditions</div>
+                    <div class="category">Parenting</div>
+                    <div class="category">Aging</div>
+                    <div class="category">Women's Health</div>
+                    <div class="category">Men's Health</div>
+                </div>
+                
+                <!-- Post Form -->
+                <div class="post-form">
+                    <h3>Post Your Health Query</h3>
+                    <form id="postForm">
+                        <div class="form-group">
+                            <label for="title">Question Title</label>
+                            <input type="text" id="title" class="form-control" placeholder="What's your health question or concern?">
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select id="category" class="form-control">
+                                <option value="">Select a category</option>
+                                <option value="mental">Mental Health</option>
+                                <option value="nutrition">Nutrition</option>
+                                <option value="fitness">Fitness</option>
+                                <option value="chronic">Chronic Conditions</option>
+                                <option value="parenting">Parenting</option>
+                                <option value="aging">Aging</option>
+                                <option value="women">Women's Health</option>
+                                <option value="men">Men's Health</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="content">Details</label>
+                            <textarea id="content" class="form-control" placeholder="Provide more details about your question or concern..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Upload Images (Optional)</label>
+                            <div class="image-upload" id="imageUpload">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>Click to upload images or drag and drop</p>
+                                <p style="font-size: 14px; color: var(--secondary);">PNG, JPG, GIF up to 5MB</p>
+                                <input type="file" id="fileInput" multiple accept="image/*" style="display: none;">
+                            </div>
+                            <div class="image-preview" id="imagePreview"></div>
+                        </div>
+                        <div class="form-actions">
+                            <div>
+                                <button type="submit" class="btn btn-primary">Post Question</button>
+                            </div>
+                            <div>
+                                <span style="color: var(--secondary); font-size: 14px;">Remember to keep personal information private</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Posts -->
+                <div class="posts">
+                    <div class="post" onclick="openPostDetail(1)">
+                        <div class="post-header">
+                            <div>
+                                <div class="post-title">Skin rash that won't go away - any ideas?</div>
+                                <div class="post-meta">
+                                    <span><i class="far fa-user"></i> Jennifer Lee</span>
+                                    <span><i class="far fa-clock"></i> 3 hours ago</span>
+                                    <span><i class="far fa-comment"></i> 8 replies</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            I've had this rash on my forearm for about 3 weeks now. It started as small red bumps and has spread slightly. It's itchy but not painful. I've tried over-the-counter hydrocortisone cream but it hasn't helped much. Any ideas what this could be?
+                        </div>
+                        <div class="post-images">
+                            <div class="post-image">
+                                <img src="https://picsum.photos/seed/rash1/200/200.jpg" alt="Skin rash">
+                            </div>
+                            <div class="post-image">
+                                <img src="https://picsum.photos/seed/rash2/200/200.jpg" alt="Skin rash closeup">
+                            </div>
+                        </div>
+                        <div class="post-tags">
+                            <span class="tag">skin condition</span>
+                            <span class="tag">rash</span>
+                            <span class="tag">dermatology</span>
+                        </div>
+                        <div class="post-actions">
+                            <div class="action-btn">
+                                <i class="far fa-thumbs-up"></i>
+                                <span>15</span>
+                            </div>
+                            <div class="action-btn">
+                                <i class="far fa-comment"></i>
+                                <span>Reply</span>
+                            </div>
+                            <div class="action-btn">
+                                <i class="far fa-share"></i>
+                                <span>Share</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="post" onclick="openPostDetail(2)">
+                        <div class="post-header">
+                            <div>
+                                <div class="post-title">Persistent cough and chest tightness</div>
+                                <div class="post-meta">
+                                    <span><i class="far fa-user"></i> David Wilson</span>
+                                    <span><i class="far fa-clock"></i> 1 day ago</span>
+                                    <span><i class="far fa-comment"></i> 14 replies</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            For the past month, I've had a dry cough that won't go away. I also feel tightness in my chest, especially when I try to take deep breaths. I don't have a fever or other cold symptoms. I'm a non-smoker and in my early 30s. Should I be concerned?
+                        </div>
+                        <div class="post-tags">
+                            <span class="tag">respiratory</span>
+                            <span class="tag">cough</span>
+                            <span class="tag">chest pain</span>
+                        </div>
+                        <div class="post-actions">
+                            <div class="action-btn">
+                                <i class="far fa-thumbs-up"></i>
+                                <span>27</span>
+                            </div>
+                            <div class="action-btn">
+                                <i class="far fa-comment"></i>
+                                <span>Reply</span>
+                            </div>
+                            <div class="action-btn">
+                                <i class="far fa-share"></i>
+                                <span>Share</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="post" onclick="openPostDetail(3)">
+                        <div class="post-header">
+                            <div>
+                                <div class="post-title">Frequent headaches and blurred vision</div>
+                                <div class="post-meta">
+                                    <span><i class="far fa-user"></i> Maria Garcia</span>
+                                    <span><i class="far fa-clock"></i> 2 days ago</span>
+                                    <span><i class="far fa-comment"></i> 21 replies</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            Lately I've been getting headaches almost every day, usually in the afternoon. They're not severe but persistent. I've also noticed that my vision gets blurry sometimes, especially when I'm looking at screens for a long time. I'm 42 and have never had vision problems before. Could these be related?
+                        </div>
+                        <div class="post-images">
+                            <div class="post-image">
+                                <img src="https://picsum.photos/seed/eye1/200/200.jpg" alt="Eye exam chart">
+                            </div>
+                        </div>
+                        <div class="post-tags">
+                            <span class="tag">headache</span>
+                            <span class="tag">vision</span>
+                            <span class="tag">neurology</span>
+                        </div>
+                        <div class="post-actions">
+                            <div class="action-btn">
+                                <i class="far fa-thumbs-up"></i>
+                                <span>32</span>
+                            </div>
+                            <div class="action-btn">
+                                <i class="far fa-comment"></i>
+                                <span>Reply</span>
+                            </div>
+                            <div class="action-btn">
+                                <i class="far fa-share"></i>
+                                <span>Share</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Disclaimer -->
+                <div class="disclaimer">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Important Disclaimer</h3>
+                    <p>The information shared on this forum is for educational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.</p>
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="sidebar-card">
+                    <h3>Trending Topics</h3>
+                    <ul class="trending-list">
+                        <li>
+                            <span class="trending-number">1</span>
+                            <a href="#">Managing stress during pandemic recovery</a>
+                        </li>
+                        <li>
+                            <span class="trending-number">2</span>
+                            <a href="#">Best diets for heart health</a>
+                        </li>
+                        <li>
+                            <span class="trending-number">3</span>
+                            <a href="#">Sleep improvement techniques</a>
+                        </li>
+                        <li>
+                            <span class="trending-number">4</span>
+                            <a href="#">Exercises for arthritis pain relief</a>
+                        </li>
+                        <li>
+                            <span class="trending-number">5</span>
+                            <a href="#">Boosting immune system naturally</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-card">
+                    <h3>Health Resources</h3>
+                    <ul>
+                        <li><a href="#">Understanding Blood Test Results</a></li>
+                        <li><a href="#">Mental Health Support Groups</a></li>
+                        <li><a href="#">Nutrition Guidelines by Age</a></li>
+                        <li><a href="#">Exercise Programs for Beginners</a></li>
+                        <li><a href="#">Preventive Health Checkups</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-card">
+                    <h3>Community Guidelines</h3>
+                    <ul>
+                        <li><a href="#">Be respectful and supportive</a></li>
+                        <li><a href="#">Share personal experiences, not medical advice</a></li>
+                        <li><a href="#">Protect your privacy and others'</a></li>
+                        <li><a href="#">Cite credible sources when sharing information</a></li>
+                        <li><a href="#">Report inappropriate content</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Post Detail Modal -->
+    <div id="postModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Post Details</h2>
+                <button class="close" onclick="closePostDetail()">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>About HealthConnect</h4>
+                    <p>We're a community-driven platform dedicated to empowering individuals with knowledge and support for their health journeys.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Health Professionals</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Health Topics</h4>
+                    <ul>
+                        <li><a href="#">Mental Health</a></li>
+                        <li><a href="#">Nutrition & Diet</a></li>
+                        <li><a href="#">Fitness & Exercise</a></li>
+                        <li><a href="#">Chronic Conditions</a></li>
+                        <li><a href="#">Preventive Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Medical Disclaimer</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 HealthConnect Forum. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Post data
+        const postsData = {
+            1: {
+                id: 1,
+                title: "Skin rash that won't go away - any ideas?",
+                author: "Jennifer Lee",
+                date: "3 hours ago",
+                content: "I've had this rash on my forearm for about 3 weeks now. It started as small red bumps and has spread slightly. It's itchy but not painful. I've tried over-the-counter hydrocortisone cream but it hasn't helped much. Any ideas what this could be?",
+                images: [
+                    "https://picsum.photos/seed/rash1/400/400.jpg",
+                    "https://picsum.photos/seed/rash2/400/400.jpg"
+                ],
+                tags: ["skin condition", "rash", "dermatology"],
+                aiSummary: "The user describes a persistent itchy rash on their forearm that has lasted for 3 weeks. The rash consists of small red bumps that have spread slightly. Over-the-counter hydrocortisone cream has not provided relief. The rash appears to be localized to one area and is not accompanied by pain.",
+                conditions: [
+                    { name: "Contact Dermatitis", percentage: "75%" },
+                    { name: "Eczema", percentage: "60%" },
+                    { name: "Psoriasis", percentage: "45%" },
+                    { name: "Fungal Infection", percentage: "30%" }
+                ]
+            },
+            2: {
+                id: 2,
+                title: "Persistent cough and chest tightness",
+                author: "David Wilson",
+                date: "1 day ago",
+                content: "For the past month, I've had a dry cough that won't go away. I also feel tightness in my chest, especially when I try to take deep breaths. I don't have a fever or other cold symptoms. I'm a non-smoker and in my early 30s. Should I be concerned?",
+                images: [],
+                tags: ["respiratory", "cough", "chest pain"],
+                aiSummary: "The user reports a persistent dry cough lasting one month, accompanied by chest tightness during deep breathing. No fever or other cold symptoms are present. The user is a non-smoker in their early 30s. The symptoms suggest a possible respiratory issue that requires medical evaluation.",
+                conditions: [
+                    { name: "Asthma", percentage: "65%" },
+                    { name: "Allergic Rhinitis", percentage: "55%" },
+                    { name: "Acute Bronchitis", percentage: "40%" },
+                    { name: "GERD", percentage: "35%" }
+                ]
+            },
+            3: {
+                id: 3,
+                title: "Frequent headaches and blurred vision",
+                author: "Maria Garcia",
+                date: "2 days ago",
+                content: "Lately I've been getting headaches almost every day, usually in the afternoon. They're not severe but persistent. I've also noticed that my vision gets blurry sometimes, especially when I'm looking at screens for a long time. I'm 42 and have never had vision problems before. Could these be related?",
+                images: [
+                    "https://picsum.photos/seed/eye1/400/400.jpg"
+                ],
+                tags: ["headache", "vision", "neurology"],
+                aiSummary: "The user experiences daily afternoon headaches that are persistent but not severe. They also report occasional blurred vision, particularly during prolonged screen use. At 42 years old with no prior vision issues, these new symptoms warrant investigation. The combination of headaches and vision changes suggests several possible causes.",
+                conditions: [
+                    { name: "Eye Strain", percentage: "80%" },
+                    { name: "Migraine", percentage: "65%" },
+                    { name: "Hypertension", percentage: "50%" },
+                    { name: "Refractive Error", percentage: "45%" }
+                ]
+            }
+        };
+
+        // Doctor data
+        const doctorsData = [
+            {
+                id: 1,
+                name: "Dr. Sarah Johnson",
+                specialty: "Dermatology",
+                experience: "12 years",
+                rating: "4.8",
+                avatar: "https://picsum.photos/seed/doctor1/100/100.jpg"
+            },
+            {
+                id: 2,
+                name: "Dr. Michael Chen",
+                specialty: "Pulmonology",
+                experience: "15 years",
+                rating: "4.9",
+                avatar: "https://picsum.photos/seed/doctor2/100/100.jpg"
+            },
+            {
+                id: 3,
+                name: "Dr. Emily Rodriguez",
+                specialty: "Ophthalmology",
+                experience: "10 years",
+                rating: "4.7",
+                avatar: "https://picsum.photos/seed/doctor3/100/100.jpg"
+            },
+            {
+                id: 4,
+                name: "Dr. James Wilson",
+                specialty: "Neurology",
+                experience: "18 years",
+                rating: "4.9",
+                avatar: "https://picsum.photos/seed/doctor4/100/100.jpg"
+            }
+        ];
+
+        // Image upload functionality
+        document.getElementById('imageUpload').addEventListener('click', function() {
+            document.getElementById('fileInput').click();
+        });
+
+        document.getElementById('fileInput').addEventListener('change', function(e) {
+            const files = e.target.files;
+            const preview = document.getElementById('imagePreview');
+            
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                const reader = new FileReader();
+                
+                reader.onload = function(event) {
+                    const imageItem = document.createElement('div');
+                    imageItem.className = 'image-preview-item';
+                    
+                    const img = document.createElement('img');
+                    img.src = event.target.result;
+                    
+                    const removeBtn = document.createElement('button');
+                    removeBtn.className = 'remove';
+                    removeBtn.innerHTML = '<i class="fas fa-times"></i>';
+                    removeBtn.onclick = function() {
+                        imageItem.remove();
+                    };
+                    
+                    imageItem.appendChild(img);
+                    imageItem.appendChild(removeBtn);
+                    preview.appendChild(imageItem);
+                };
+                
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Post form submission
+        document.getElementById('postForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const title = document.getElementById('title').value;
+            const category = document.getElementById('category').value;
+            const content = document.getElementById('content').value;
+            
+            if (!title || !content) {
+                alert('Please fill in all required fields');
+                return;
+            }
+            
+            // In a real application, you would send this data to a server
+            // For this demo, we'll just show a success message
+            alert('Your question has been posted successfully!');
+            
+            // Reset form
+            this.reset();
+            document.getElementById('imagePreview').innerHTML = '';
+        });
+
+        // Category filtering
+        const categories = document.querySelectorAll('.category');
+        categories.forEach(category => {
+            category.addEventListener('click', function() {
+                // Remove active class from all categories
+                categories.forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked category
+                this.classList.add('active');
+                
+                // In a real application, you would filter posts based on the selected category
+                // For this demo, we'll just show an alert
+                if (this.textContent !== 'All Topics') {
+                    alert(`Showing posts in ${this.textContent} category`);
+                }
+            });
+        });
+
+        // Post actions
+        document.querySelectorAll('.action-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation(); // Prevent post detail from opening
+                
+                const action = this.textContent.trim();
+                
+                if (action === 'Reply') {
+                    // In a real application, you would open a reply form
+                    alert('Reply form would open here');
+                } else if (action === 'Share') {
+                    // In a real application, you would open sharing options
+                    alert('Sharing options would appear here');
+                }
+            });
+        });
+
+        // Like functionality
+        document.querySelectorAll('.action-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation(); // Prevent post detail from opening
+                
+                const icon = this.querySelector('i');
+                const countSpan = this.querySelector('span');
+                
+                if (icon && icon.classList.contains('fa-thumbs-up')) {
+                    // Toggle like
+                    if (icon.classList.contains('far')) {
+                        icon.classList.remove('far');
+                        icon.classList.add('fas');
+                        this.style.color = 'var(--primary)';
+                        
+                        // Increment count
+                        const currentCount = parseInt(countSpan.textContent);
+                        countSpan.textContent = currentCount + 1;
+                    } else {
+                        icon.classList.remove('fas');
+                        icon.classList.add('far');
+                        this.style.color = '';
+                        
+                        // Decrement count
+                        const currentCount = parseInt(countSpan.textContent);
+                        countSpan.textContent = currentCount - 1;
+                    }
+                }
+            });
+        });
+
+        // Open post detail modal
+        function openPostDetail(postId) {
+            const modal = document.getElementById('postModal');
+            const modalBody = document.getElementById('modalBody');
+            const post = postsData[postId];
+            
+            if (!post) return;
+            
+            // Build post detail HTML
+            let postImagesHtml = '';
+            if (post.images && post.images.length > 0) {
+                postImagesHtml = '<div class="post-detail-images">';
+                post.images.forEach(image => {
+                    postImagesHtml += `
+                        <div class="post-detail-image">
+                            <img src="${image}" alt="Post image">
+                        </div>
+                    `;
+                });
+                postImagesHtml += '</div>';
+            }
+            
+            let postTagsHtml = '';
+            if (post.tags && post.tags.length > 0) {
+                postTagsHtml = '<div class="post-tags">';
+                post.tags.forEach(tag => {
+                    postTagsHtml += `<span class="tag">${tag}</span>`;
+                });
+                postTagsHtml += '</div>';
+            }
+            
+            // Build AI conditions HTML
+            let conditionsHtml = '';
+            if (post.conditions && post.conditions.length > 0) {
+                conditionsHtml = '<div class="condition-list">';
+                post.conditions.forEach(condition => {
+                    conditionsHtml += `
+                        <div class="condition-item">
+                            <span class="condition-name">${condition.name}</span>
+                            <span class="condition-percentage">${condition.percentage}</span>
+                        </div>
+                    `;
+                });
+                conditionsHtml += '</div>';
+            }
+            
+            // Build doctors HTML
+            let doctorsHtml = '';
+            if (doctorsData && doctorsData.length > 0) {
+                doctorsHtml = '<div class="doctor-list">';
+                doctorsData.forEach(doctor => {
+                    doctorsHtml += `
+                        <div class="doctor-card">
+                            <div class="doctor-info">
+                                <div class="doctor-avatar">
+                                    <img src="${doctor.avatar}" alt="${doctor.name}">
+                                </div>
+                                <div class="doctor-details">
+                                    <h4>${doctor.name}</h4>
+                                    <p>${doctor.experience} experience • Rating: ${doctor.rating}/5</p>
+                                </div>
+                            </div>
+                            <div class="doctor-specialty">${doctor.specialty}</div>
+                            <div class="doctor-actions">
+                                <button class="btn btn-primary btn-small">Consult</button>
+                                <button class="btn btn-outline btn-small">View Profile</button>
+                            </div>
+                        </div>
+                    `;
+                });
+                doctorsHtml += '</div>';
+            }
+            
+            modalBody.innerHTML = `
+                <div class="post-detail">
+                    <div class="post-detail-header">
+                        <div>
+                            <h2 class="post-detail-title">${post.title}</h2>
+                            <div class="post-detail-meta">
+                                <span><i class="far fa-user"></i> ${post.author}</span>
+                                <span><i class="far fa-clock"></i> ${post.date}</span>
+                            </div>
+                        </div>
+                    </div>
+                    ${postImagesHtml}
+                    <div class="post-detail-content">${post.content}</div>
+                    ${postTagsHtml}
+                </div>
+                
+                <div class="ai-summary">
+                    <div class="ai-summary-header">
+                        <h3>AI Summary</h3>
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="ai-summary-content">
+                        ${post.aiSummary}
+                    </div>
+                </div>
+                
+                <div class="ai-conditions">
+                    <div class="ai-conditions-header">
+                        <h3>Possible Conditions (AI Analysis)</h3>
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    ${conditionsHtml}
+                    <p style="margin-top: 15px; font-size: 14px; color: #78350f;">
+                        <i class="fas fa-info-circle"></i> This is not a diagnosis. Percentages indicate likelihood based on symptoms described.
+                    </p>
+                </div>
+                
+                <div class="doctor-section">
+                    <div class="doctor-header">
+                        <h3>Consult a Doctor</h3>
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    ${doctorsHtml}
+                </div>
+            `;
+            
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+
+        // Close post detail modal
+        function closePostDetail() {
+            const modal = document.getElementById('postModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Enable scrolling
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            const modal = document.getElementById('postModal');
+            if (event.target === modal) {
+                closePostDetail();
+            }
+        }
+    </script>
+</body>
+</html>
