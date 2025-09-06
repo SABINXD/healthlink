@@ -41,7 +41,6 @@ public class SignInActivity extends AppCompatActivity {
         forgotPasswordText = findViewById(R.id.forgot_password_text);
         signUpText = findViewById(R.id.sign_up_text);
         backButton = findViewById(R.id.back_button);
-        passwordToggle = findViewById(R.id.password_toggle);
     }
 
     private void setupClickListeners() {
@@ -52,7 +51,6 @@ public class SignInActivity extends AppCompatActivity {
         signInButton.setOnClickListener(v -> performSignIn());
 
         forgotPasswordText.setOnClickListener(v -> {
-            // Handle forgot password
             Toast.makeText(this, "Forgot password clicked", Toast.LENGTH_SHORT).show();
         });
 
@@ -77,11 +75,11 @@ public class SignInActivity extends AppCompatActivity {
         String email = emailEditText.getText().toString().trim();
         String password = passwordEditText.getText().toString().trim();
 
-        // Reset errors
+     
         emailLayout.setError(null);
         passwordLayout.setError(null);
 
-        // Validate inputs
+      
         if (TextUtils.isEmpty(email)) {
             emailLayout.setError("Email is required");
             return;
@@ -101,8 +99,7 @@ public class SignInActivity extends AppCompatActivity {
             passwordLayout.setError("Password must be at least 6 characters");
             return;
         }
-
-        // TODO: Implement actual authentication logic
+        
         Toast.makeText(this, "Sign in successful!", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(this, MainActivity.class));
         finish();
