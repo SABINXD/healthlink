@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary">#1976D2</color>
+    <color name="primary_light">#E3F2FD</color>
+
+    <!-- App Colors -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Status Colors -->
+    <color name="colorPending">#FFA000</color>
+    <color name="colorConfirmed">#4CAF50</color>
+    <color name="colorCancelled">#F44336</color>
+    <color name="colorCompleted">#2196F3</color>
+
+    <!-- Time Slot Colors -->
+    <color name="time_slot_booked_bg">#CCCCCC</color>
+    <color name="time_slot_booked_text">#F44336</color>
+    <color name="time_slot_past_bg">#EEEEEE</color>
+    <color name="time_slot_past_text">#777777</color>
+    <color name="time_slot_available_bg">#FFFFFF</color>
+    <color name="time_slot_available_text">#000000</color>
+
+    <!-- General Colors -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#808080</color>
+    <color name="darkGray">#AE000000</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="red">#F44336</color>
+    <color name="green">#4CAF50</color>
+    <color name="blue">#2196F3</color>
+
+    <!-- Button Colors -->
+    <color name="button_color">#3F51B5</color>
+    <color name="button_disabled_color">#BDBDBD</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="textcolor">#464646</color>
+
+    <!-- Background Colors -->
+    <color name="background_light">#F5F5F5</color>
+    <color name="background">#0F0F23</color>
+    <color name="bg_primary">#0F172A</color>
+    <color name="bg_secondary">#1E293B</color>
+    <color name="card_background">#1A1B3A</color>
+    <color name="code_bg">#0D1117</color>
+
+    <!-- Material Components Colors -->
+    <color name="surface_variant">#F8F9FA</color>
+    <color name="outline">#E0E0E0</color>
+    <color name="error">#D32F2F</color>
+    <color name="error_light">#FFEBEE</color>
+
+    <!-- Brand Colors -->
+    <color name="tech_blue">#344899</color>
+    <color name="tech_orange">#e65b0c</color>
+    <color name="tech_blue_50">#34489980</color>
+    <color name="primary_blue">#2196F3</color>
+    <color name="sky_blue">#007cf7</color>
+    <color name="dark_purple">#23002b</color>
+    <color name="danger_red">#e65b0c</color>
+    <color name="success_green">#4CAF50</color>
+    <color name="notification_red">#FF5722</color>
+    <color name="blocked_gray">#9E9E9E</color>
+    <color name="pending_orange">#FF9800</color>
+
+    <!-- Status Colors (Additional) -->
+    <color name="status_red">#EF4444</color>
+    <color name="status_yellow">#F59E0B</color>
+    <color name="status_green">#10B981</color>
+
+    <!-- Dark Theme Colors -->
+    <color name="bg_dark">#121212</color>
+    <color name="bg_input">#1C1C1E</color>
+    <color name="hint_color">#888888</color>
+
+    <!-- Accent Colors -->
+    <color name="accent">#06B6D4</color>
+    <color name="accent_foreground">#FFFFFF</color>
+    <color name="secondary">#10B981</color>
+    <color name="secondary_foreground">#FFFFFF</color>
+    <color name="accent_cyan">#22D3EE</color>
+    <color name="accent_blue">#3B82F6</color>
+    <color name="accent_emerald">#10B981</color>
+    <color name="accent_teal">#14B8A6</color>
+
+    <!-- Text Colors for Dark Theme -->
+    <color name="foreground">#E4E4E7</color>
+    <color name="muted_foreground">#71717A</color>
+    <color name="code_text">#F0F6FF</color>
+    <color name="primary_foreground">#FFFFFF</color>
+    <color name="text_hint">#64748B</color>
+    <color name="text_timestamp">#64748B</color>
+    <color name="text_user_message">#E0F2FE</color>
+    <color name="text_bot_message">#F1F5F9</color>
+
+    <!-- Border and Input Colors -->
+    <color name="border">#27272A</color>
+    <color name="input_background">#18181B</color>
+
+    <!-- Syntax Highlighting -->
+    <color name="syntax_keyword">#FF79C6</color>
+    <color name="syntax_string">#F1FA8C</color>
+    <color name="syntax_comment">#6272A4</color>
+    <color name="darkgray">#6272A4</color>
+    <color name="lightgray">#8399DB</color>
+
+
+    <!-- Instagram Colors -->
+    <color name="instafirstclor">#3c43e5</color>
+    <color name="instacenterclord">#d34267</color>
+    <color name="instalastclor">#f6ac35</color>
+
+    <!-- UI Elements -->
+    <color name="statusbarcolo">#CECECE</color>
+    <color name="icontint">#00363636</color>
+    <color name="yourSelectedColor">#FF0101</color>
+    <color name="blue_link">#246fd7</color>
+    <color name="devider">#DDDDDD</color>
+    <color name="chip_background">#e3f2fd</color>
+</resources>

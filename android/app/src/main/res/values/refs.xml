@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="status_confirmed" />
+    <drawable name="status_pending" />
+    <drawable name="status_canceled" />
+    <drawable name="status_submitted" />
+    <drawable name="status_default" />
+</resources>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homepage_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".HomePage">
+    <!-- Emergency Button - RED HOT BUTTON AT TOP -->
+    <Button
+        android:id="@+id/emergency_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/red"
+        android:text="🚨 EMERGENCY SOS 🚨"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:elevation="8dp"
+        android:layout_marginBottom="4dp" />
+    <!-- Top Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/top_nav"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@id/emergency_button"
+        android:background="@color/white"
+        android:elevation="6dp"
+        android:theme="?attr/actionBarTheme">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="12dp">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="338dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:contentDescription="Logo"
+                android:scaleType="fitStart"
+                android:src="@drawable/big_logo" />
+            <ImageView
+                android:id="@+id/send"
+                android:layout_width="31dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="Chat"
+                android:src="@drawable/send" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <!-- SwipeRefreshLayout -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_nav"
+        android:layout_above="@id/custom_bottom_nav">
+        <!-- RecyclerView for Feed -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerFeed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/item_post" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:id="@+id/custom_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:background="@color/white"
+        android:elevation="10dp"
+        android:paddingVertical="4dp">
+        <!-- Home -->
+        <LinearLayout
+            android:id="@+id/nav_home_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="6dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless">
+            <ImageView
+                android:id="@+id/nav_home"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/home"
+                android:contentDescription="Home" />
+        </LinearLayout>
+        <!-- Search -->
+        <LinearLayout
+            android:id="@+id/nav_search_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="6dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless">
+            <ImageView
+                android:id="@+id/nav_search"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/search"
+                android:contentDescription="Search" />
+        </LinearLayout>
+        <!-- Post -->
+        <LinearLayout
+            android:id="@+id/nav_post_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="6dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless">
+            <ImageView
+                android:id="@+id/nav_post"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/plus"
+                android:contentDescription="Create Post" />
+        </LinearLayout>
+        <!-- Notifications -->
+        <LinearLayout
+            android:id="@+id/nav_notifications_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="6dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/nav_notifications"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_notifications"
+                    android:contentDescription="Notifications" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- Appointments -->
+        <LinearLayout
+            android:id="@+id/nav_appointments_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="6dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless">
+            <ImageView
+                android:id="@+id/nav_appointments"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/calendar"
+                android:contentDescription="Appointments" />
+        </LinearLayout>
+        <!-- Profile -->
+        <LinearLayout
+            android:id="@+id/nav_profile_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="6dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless">
+            <ImageView
+                android:id="@+id/nav_profile"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/user"
+                android:contentDescription="Profile" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

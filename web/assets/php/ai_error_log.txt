@@ -1,0 +1,34 @@
+Array
+(
+    [error] => Array
+        (
+            [message] => Provider returned error
+            [code] => 400
+            [metadata] => Array
+                (
+                    [raw] => {"error":{"code":"BadRequest","message":"Invalid image data.","param":null,"type":null}}
+                    [provider_name] => Azure
+                )
+
+        )
+
+    [user_id] => user_31sSxZEwKhgi9KfXgQaoFETRT4L
+)
+
+Array
+(
+    [error] => Array
+        (
+            [message] => Provider returned error
+            [code] => 400
+            [metadata] => Array
+                (
+                    [raw] => {"error":{"code":"BadRequest","message":"Invalid image data.","param":null,"type":null}}
+                    [provider_name] => Azure
+                )
+
+        )
+
+    [user_id] => user_31sSxZEwKhgi9KfXgQaoFETRT4L
+)
+
