@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="32dp">
+
+        <!-- Status Bar Spacer -->
+        <View
+            android:id="@+id/status_bar_spacer"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Enhanced Back Button -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/back_button_card"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="@color/card"
+            app:strokeWidth="0dp"
+            app:layout_constraintTop_toBottomOf="@id/status_bar_spacer"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/arrow_back_24px"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:tint="@color/foreground" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Hero Section with 2FA Icon -->
+        <LinearLayout
+            android:id="@+id/hero_section"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:paddingHorizontal="8dp"
+            app:layout_constraintTop_toBottomOf="@id/back_button_card"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- 2FA Icon with Primary Background -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/primary">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/shield_toggle_24px"
+                    app:tint="@color/primary_foreground" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Main Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Two-Factor Authentication"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/foreground"
+                android:textAlignment="center"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Subtitle with Email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Enter the 6-digit code sent to"
+                android:textSize="16sp"
+                android:textColor="@color/muted_foreground"
+                android:textAlignment="center"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/email_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="user@example.com"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <!-- Enhanced Form Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/form_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="12dp"
+            app:cardBackgroundColor="@color/card"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/border"
+            app:layout_constraintTop_toBottomOf="@id/hero_section"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="391dp"
+                android:layout_height="536dp"
+                android:orientation="vertical"
+                android:padding="32dp">
+
+                <!-- Form Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:text="Verification Code"
+                    android:textColor="@color/card_foreground"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <!-- Code Input Fields -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/code_input_1"
+                        android:layout_width="48dp"
+                        android:layout_height="56dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/code_input_background"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textColor="@color/card_foreground"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/code_input_2"
+                        android:layout_width="48dp"
+                        android:layout_height="56dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/code_input_background"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textColor="@color/card_foreground"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/code_input_3"
+                        android:layout_width="48dp"
+                        android:layout_height="56dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/code_input_background"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textColor="@color/card_foreground"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/code_input_4"
+                        android:layout_width="48dp"
+                        android:layout_height="56dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/code_input_background"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textColor="@color/card_foreground"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/code_input_5"
+                        android:layout_width="48dp"
+                        android:layout_height="56dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/code_input_background"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textColor="@color/card_foreground"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/code_input_6"
+                        android:layout_width="48dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/code_input_background"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textColor="@color/card_foreground"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <!-- Verify Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/verify_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_marginBottom="24dp"
+                    android:enabled="false"
+                    android:text="Verify Code"
+                    android:textColor="@color/primary_foreground"
+
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/primary"
+                    app:cornerRadius="16dp"
+                    app:elevation="4dp"
+                    app:icon="@drawable/check_circle_24px"
+                    app:iconGravity="end"
+                    app:iconTint="@color/primary_foreground" />
+
+                <!-- Resend Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/timer_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Resend code in 60s"
+                        android:textColor="@color/muted_foreground"
+
+                        android:textSize="14sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/resend_button"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:enabled="false"
+                        android:text="Resend Code"
+
+                        android:textColor="@color/secondary"
+                        app:cornerRadius="12dp"
+                        app:strokeColor="@color/secondary"
+                        app:strokeWidth="1dp" />
+
+                </LinearLayout>
+
+                <!-- Security Notice -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    app:cardBackgroundColor="@color/muted"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="0dp"
+                    app:strokeWidth="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginEnd="12dp"
+                            android:src="@drawable/ic_security"
+                            app:tint="@color/muted_foreground" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:lineSpacingExtra="2dp"
+                            android:text="This code will expire in 10 minutes for your security"
+                            android:textColor="@color/muted_foreground"
+
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:id="@+id/back_to_sign_in_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="12dp"
+                    android:text="Back to Sign In"
+                    android:textColor="@color/primary"
+
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

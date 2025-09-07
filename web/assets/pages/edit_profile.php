@@ -1,9 +1,11 @@
 <div>
+    <?php
+    global $user;
+    ?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <style>
-        <?php
-        global $user;
-        ?>.container {
+        .profile-container {
+            /* Changed from .container */
             max-width: 100%;
             margin: auto;
             border: 1px solid #10b981;
@@ -14,6 +16,7 @@
             margin-top: 90px;
             background-color: #ffffff;
         }
+
         .header {
             text-align: center;
             margin-bottom: 20px;
@@ -24,6 +27,7 @@
             padding: 20px;
             border-radius: 8px 8px 0 0;
         }
+
         .profile-section {
             display: flex;
             flex-direction: column;
@@ -35,6 +39,7 @@
             margin: 20px;
             border: 1px solid #dcfce7;
         }
+
         .profile-section .image-preview {
             width: 150px;
             height: 150px;
@@ -48,11 +53,13 @@
             background-color: #ffffff;
             box-shadow: 0 4px 10px rgba(16, 185, 129, 0.1);
         }
+
         .profile-section .image-preview img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+
         .profile-section button {
             margin-top: 15px;
             padding: 12px 24px;
@@ -65,27 +72,32 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 10px rgba(16, 185, 129, 0.2);
         }
+
         .profile-section button:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 15px rgba(16, 185, 129, 0.3);
         }
+
         .form-section {
             display: flex;
             flex-wrap: wrap;
             gap: 25px;
             padding: 20px 30px;
         }
+
         .form-section .input-group {
             flex: 1 1 calc(50% - 25px);
             display: flex;
             flex-direction: column;
         }
+
         .form-section .input-group label {
             font-size: 16px;
             color: #047857;
             margin-bottom: 8px;
             font-weight: 600;
         }
+
         .form-section .input-group input {
             padding: 12px 15px;
             border: 1px solid #d1fae5;
@@ -94,15 +106,18 @@
             background-color: #f0fdf4;
             transition: all 0.3s ease;
         }
+
         .form-section .input-group input:focus {
             border-color: #10b981;
             outline: none;
             box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
         }
+
         .form-section .input-group input:disabled {
             background-color: #f9fafb;
             color: #6b7280;
         }
+
         .gender {
             display: flex;
             flex-direction: column;
@@ -113,16 +128,19 @@
             border-radius: 12px;
             border: 1px solid #dcfce7;
         }
+
         .gender label {
             font-size: 16px;
             color: #047857;
             margin-bottom: 10px;
             font-weight: 600;
         }
+
         .gender-options {
             display: flex;
             gap: 20px;
         }
+
         .gender-options label {
             display: flex;
             align-items: center;
@@ -131,15 +149,18 @@
             font-weight: normal;
             cursor: pointer;
         }
+
         .gender-options input[type="radio"] {
             margin-right: 8px;
             accent-color: #10b981;
         }
+
         .form-actions {
             margin-top: 30px;
             text-align: center;
             padding: 0 30px 30px;
         }
+
         .form-actions button {
             padding: 14px 30px;
             background: linear-gradient(135deg, #10b981, #059669);
@@ -152,15 +173,18 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 10px rgba(16, 185, 129, 0.2);
         }
+
         .form-actions button:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 15px rgba(16, 185, 129, 0.3);
         }
+
         .error-message {
             color: #ef4444;
             font-size: 14px;
             margin-top: 5px;
         }
+
         .success-message {
             color: #10b981;
             text-align: center;
@@ -173,7 +197,7 @@
         }
     </style>
 
-    <div class="container">
+    <div class="profile_container">
         <div class="header">
             <i class="fas fa-user-md mr-2"></i> Edit HealthLink Profile
         </div>
@@ -254,6 +278,7 @@
     <script>
         const profileInput = document.getElementById('profileInput');
         const profilePreview = document.getElementById('profilePreview');
+
         function triggerFileInput() {
             profileInput.click();
         }
@@ -268,4 +293,7 @@
             }
         });
     </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </div>

@@ -108,6 +108,7 @@
     </div>
   </div>
 
+
   <!-- Notifications Sidebar -->
   <div class="offcanvas offcanvas-start" tabindex="-1" id="notification_sidebar" aria-labelledby="notificationSidebarLabel">
     <div class="offcanvas-header bg-gradient-to-r from-green-500 to-teal-600 text-white">

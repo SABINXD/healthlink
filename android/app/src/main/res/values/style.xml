@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Healthlink" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/primary_light</item>
+        <item name="colorOnPrimaryContainer">@color/primary_dark</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary1</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        <item name="colorSecondaryContainer">@color/secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/on_secondary_container</item>
+
+        <!-- Tertiary brand color. -->
+        <item name="colorTertiary">@color/secondary1</item>
+        <item name="colorOnTertiary">@color/on_secondary</item>
+        <item name="colorTertiaryContainer">@color/secondary_container</item>
+        <item name="colorOnTertiaryContainer">@color/on_secondary_container</item>
+
+        <!-- Error color. -->
+        <item name="colorError">@color/danger</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="colorErrorContainer">@color/danger</item>
+        <item name="colorOnErrorContainer">@color/white</item>
+
+        <!-- Background color. -->
+        <item name="colorOnBackground">@color/text_primary</item>
+
+        <!-- Surface color. -->
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/on_surface_variant</item>
+        <item name="colorSurfaceInverse">@color/text_primary</item>
+        <item name="colorOnSurfaceInverse">@color/white</item>
+
+        <!-- Outline color. -->
+        <item name="colorOutline">@color/outline</item>
+        <item name="colorOutlineVariant">@color/outline_variant</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Additional custom attributes -->
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
+    </style>
+
+    <!-- Custom Bottom Navigation Style -->
+    <style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemIconTint">@color/bottom_nav_color_selector</item>
+        <item name="itemTextColor">@color/bottom_nav_color_selector</item>
+        <item name="backgroundTint">@color/bottom_nav_color</item>
+    </style>
+</resources>

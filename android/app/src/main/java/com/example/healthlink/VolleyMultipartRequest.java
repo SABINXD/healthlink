@@ -21,7 +21,6 @@ public class VolleyMultipartRequest extends Request<NetworkResponse> {
     private final Map<String, DataPart> mByteData;
     private final String mBoundary;
 
-    // Constructor for direct parameter passing
     public VolleyMultipartRequest(int method, String url,
                                   Response.Listener<NetworkResponse> listener,
                                   Response.ErrorListener errorListener,
@@ -37,7 +36,6 @@ public class VolleyMultipartRequest extends Request<NetworkResponse> {
         this.mBoundary = "apiclient-" + System.currentTimeMillis();
     }
 
-    // Constructor for overriding getParams() and getByteData() methods
     public VolleyMultipartRequest(int method, String url,
                                   Response.Listener<NetworkResponse> listener,
                                   Response.ErrorListener errorListener) {
@@ -63,7 +61,6 @@ public class VolleyMultipartRequest extends Request<NetworkResponse> {
         return getCustomParams();
     }
 
-    // Provide default implementation instead of abstract
     protected Map<String, String> getCustomParams() {
         return new HashMap<>();
     }
@@ -95,7 +92,6 @@ public class VolleyMultipartRequest extends Request<NetworkResponse> {
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         DataOutputStream dos = new DataOutputStream(bos);
         try {
-            // Build multipart form data
             String lineEnd = "\r\n";
             String twoHyphens = "--";
 

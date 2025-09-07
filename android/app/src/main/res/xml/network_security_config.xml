@@ -3,8 +3,11 @@
 
 
     <base-config cleartextTrafficPermitted="true" />
+
+
     <domain-config cleartextTrafficPermitted="true">
-      <domain includeSubdomains="true">10.40.20.126</domain>
+      <domain includeSubdomains="true">192.168.1.166</domain>
+
     </domain-config>
 
 

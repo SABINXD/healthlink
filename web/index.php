@@ -18,7 +18,7 @@ $pagecount = count($_GET);
 
 if (isset($_SESSION['Auth']) && $user['ac_status'] == 1 && !$pagecount) {
     showPage('header', ["page_title" => 'healthlink - Connect  all over the world']);
-    showPage('navbar');
+
     showPage('main');
 } else if (isset($_SESSION['Auth']) && $user['ac_status'] == 0 && !$pagecount) {
     showPage('header', ["page_title" => 'verify you email']);
@@ -29,35 +29,35 @@ if (isset($_SESSION['Auth']) && $user['ac_status'] == 1 && !$pagecount) {
 } elseif (isset($_SESSION['Auth']) && isset($_GET['editprofile']) && $user['ac_status'] == 1) {
 
     showPage('header', ["page_title" => 'Edit your profile deatils']);
-    showPage('navbar');
+
     showPage('edit_profile');
+   
 } elseif (isset($_SESSION['Auth']) && isset($_GET['myappointment'])) {
     showPage('header', ["page_title" => 'My Appointments']);
-    showPage('navbar');
+
     showPage('my_appointments');
 } elseif (isset($_SESSION['Auth']) && isset($_GET['forum'])) {
     showPage('header', ["page_title" => 'forum - health link']);
-    
+
     showPage('');
-}
- elseif (isset($_SESSION['Auth']) && isset($_GET['manageappointment'])) {
+} elseif (isset($_SESSION['Auth']) && isset($_GET['manageappointment'])) {
     showPage('header', ["page_title" => 'Manage Appointments']);
-    showPage('navbar');
+   
     showPage('manage_appointments');
 } elseif (isset($_SESSION['Auth']) && isset($_GET['verifydoctor']) && $user['ac_status'] == 1 && $user['is_doctor'] == 0) {
 
     showPage('header', ["page_title" => 'Request for doctor verification']);
-    showPage('navbar');
+
     showPage('verify_doctor');
 } elseif (isset($_SESSION['Auth']) && isset($_GET['emergencyhelp']) && $user['ac_status'] == 1) {
 
     showPage('header', ["page_title" => 'Emergency help']);
-    showPage('navbar');
+
     showPage('emergency_help');
 } elseif (isset($_SESSION['Auth']) && isset($_GET['bookappointment']) && $user['ac_status'] == 1 && $user['is_doctor'] == 0) {
 
     showPage('header', ["page_title" => 'Book an appointment']);
-    showPage('navbar');
+
     showPage('book_appointment');
 } elseif (isset($_SESSION['Auth']) && isset($_GET['u']) && $user['ac_status'] == 1) {
 
@@ -69,7 +69,7 @@ if (isset($_SESSION['Auth']) && $user['ac_status'] == 1 && !$pagecount) {
 
 
         showPage('header', ["page_title" => 'No user found']);
-        showPage('navbar');
+
         showPage('user_not_found');
     } else {
         $profile_post = getPostById($profile['id']);
@@ -77,17 +77,17 @@ if (isset($_SESSION['Auth']) && $user['ac_status'] == 1 && !$pagecount) {
         $profile['following'] = getFollowingCount($profile['id']);
 
         showPage('header', ["page_title" => $profile['first_name'] . ' ' . $profile['last_name'] . ' ' . 'Profile']);
-        showPage('navbar');
+
         showPage('profile');
     }
 } elseif (isset($_GET['signup'])) {
     showPage('header', ["page_title" => 'healthlink - Signup page healthlink']);
-    showPage('navbar');
+
 
     showPage('signup');
 } elseif (isset($_GET['login'])) {
     showPage('header', ["page_title" => 'healthlink - login page healthlink']);
-    showPage('navbar');
+
     showPage('login');
 } elseif (isset($_GET['forgotpassword'])) {
     showPage('header', ["page_title" => 'forgot Password -healthlink']);
@@ -95,7 +95,7 @@ if (isset($_SESSION['Auth']) && $user['ac_status'] == 1 && !$pagecount) {
 } else {
     if (isset($_SESSION['Auth']) && $user['ac_status'] == 1) {
         showPage('header', ['page_title' => 'Home']);
-        showPage('navbar');
+
         showPage('main');
     } elseif (isset($_SESSION['Auth']) && $user['ac_status'] == 0) {
 

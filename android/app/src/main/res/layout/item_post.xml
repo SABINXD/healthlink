@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp">
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,206 +14,163 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- User Info -->
+        <!-- Post Header -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profilePic"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/profile_placeholder"/>
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="vertical"
-                android:layout_marginStart="12dp">
+                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/userName"
+                    android:id="@+id/postTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="User Name"
-                    android:textColor="#000000"
-                    android:textStyle="bold"/>
+                    android:layout_marginBottom="4dp"
+                    android:textColor="#2D3748"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:text="Skin rash that won't go away - any ideas?" />
 
-                <TextView
-                    android:id="@+id/postTime"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="2 hours ago"
-                    android:textColor="#666666"
-                    android:textSize="12sp"/>
-            </LinearLayout>
-
-            <ImageView
-                android:id="@+id/postOptions"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_more_vert"
-                android:visibility="gone"/>
-        </LinearLayout>
-
-        <!-- Post Description -->
-        <TextView
-            android:id="@+id/postDescription"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Post description here"
-            android:textColor="#000000"/>
-
-        <!-- Image Container with Spoiler Support -->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/imageCard"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="2dp">
-
-            <FrameLayout
-                android:id="@+id/imageContainer"
-                android:layout_width="match_parent"
-                android:layout_height="200dp">
-
-                <!-- Original Image -->
-                <ImageView
-                    android:id="@+id/postImage"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"/>
-
-                <!-- Spoiler Container (Hidden by default) -->
                 <LinearLayout
-                    android:id="@+id/spoilerContainer"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:visibility="gone"
-                    android:background="#000000">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/spoilerText"
+                        android:id="@+id/postAuthor"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="This content has been marked as sensitive"
-                        android:textColor="#FFFFFF"
-                        android:textSize="16sp"
-                        android:gravity="center"
-                        android:layout_marginBottom="16dp"/>
+                        android:layout_marginEnd="16dp"
+                        android:drawablePadding="4dp"
+                        android:textColor="#4A5568"
+                        android:textSize="14sp"
+                        app:drawableStartCompat="@drawable/person_24px"
+                        tools:text="Jennifer Lee" />
 
-                    <Button
-                        android:id="@+id/unblurButton"
+                    <TextView
+                        android:id="@+id/postTime"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Unblur"
-                        android:textColor="#FFFFFF"
-                        android:background="@drawable/unblur_button_bg"
-                        android:padding="12dp"/>
+                        android:layout_marginEnd="16dp"
+                        android:drawablePadding="4dp"
+                        android:textColor="#4A5568"
+                        android:textSize="14sp"
+                        app:drawableStartCompat="@drawable/ic_time"
+                        tools:text="3 hours ago" />
+
+                    <TextView
+                        android:id="@+id/postReplies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="4dp"
+                        android:textColor="#4A5568"
+                        android:textSize="14sp"
+                        app:drawableStartCompat="@drawable/ic_comment"
+                        tools:text="8 replies" />
+
                 </LinearLayout>
-            </FrameLayout>
-        </androidx.cardview.widget.CardView>
 
-        <!-- AI Summary Card -->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/ai_summary_card"
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Post Content -->
+        <TextView
+            android:id="@+id/postContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="#2D3748"
+            android:textSize="16sp"
+            tools:text="I've had this rash on my forearm for about 3 weeks now. It started as small red bumps and has spread slightly..." />
+
+        <!-- Post Images -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/postImagesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal"
             android:visibility="gone"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="1dp"
-            app:cardBackgroundColor="#F0F0F0">
+            tools:listitem="@layout/item_post_image" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="12dp">
+        <!-- Tags -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/postTagsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal"
+            tools:listitem="@layout/item_tag" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="AI Analysis"
-                    android:textColor="#333333"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:id="@+id/ai_summary_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="AI summary here"
-                    android:textColor="#666666"/>
-
-                <ProgressBar
-                    android:id="@+id/ai_summary_progress"
-                    style="?android:attr/progressBarStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:visibility="gone"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <!-- Interaction Buttons -->
+        <!-- Action Buttons -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:id="@+id/likeLayout"
+                android:id="@+id/likeButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:background="?attr/selectableItemBackground"
                 android:orientation="horizontal"
-                android:gravity="center_vertical"
                 android:padding="8dp">
 
                 <ImageView
                     android:id="@+id/likeIcon"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/like_icon"/>
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/ic_thumb_up_outline" />
 
                 <TextView
                     android:id="@+id/likeCount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
-                    android:text="0"/>
+                    android:textColor="#4A5568"
+                    android:textSize="14sp"
+                    tools:text="15" />
+
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/commentLayout"
+                android:id="@+id/replyButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:background="?attr/selectableItemBackground"
                 android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:layout_marginStart="16dp"
                 android:padding="8dp">
 
                 <ImageView
-                    android:id="@+id/commentIcon"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/comment_icon"/>
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/ic_comment" />
 
                 <TextView
-                    android:id="@+id/commentCount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
-                    android:text="0"/>
+                    android:text="Reply"
+                    android:textColor="#4A5568"
+                    android:textSize="14sp" />
+
             </LinearLayout>
+
+
+            </LinearLayout>
+
         </LinearLayout>
-    </LinearLayout>
-</androidx.cardview.widget.CardView>
+
+
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="signupBtn" type="id" />
-    <item name="btnAnalyze" type="id" />
-    <item name="tvResult" type="id" />
-    <item name="btnPickImage" type="id" />
-    <item name="imageView" type="id" />
-    <item name="noPostsText" type="id" />
-    <item name="addPostButton" type="id" />
+    <item name="social_buttons_layout" type="id" />
+    <item name="detail_content" type="id" />
+    <item name="detail_time" type="id" />
+
+    <item name="detail_author" type="id" />
+
+    <item name="detail_title" type="id" />
 </resources>
