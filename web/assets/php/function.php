@@ -575,10 +575,38 @@ function showError($field)
             }
             return $result;
         }
+        // Add to function.php
+        // Add to function.php
 
+        function liveSearch($keyword)
+        {
+            global $db;
+            $keyword = mysqli_real_escape_string($db, $keyword);
+            $results = array('posts' => array());
 
+            // Only search if keyword has at least 2 characters
+            if (strlen($keyword) < 2) {
+                return $results;
+            }
 
-        //function to create post
+            // Post search
+            $postQuery = "SELECT id, post_title, post_desc, post_category, created_at 
+                  FROM posts 
+                  WHERE post_title LIKE '%$keyword%' 
+                  OR post_desc LIKE '%$keyword%' 
+                  OR post_category LIKE '%$keyword%'
+                  ORDER BY created_at DESC 
+                  LIMIT 10";
+
+            $postResult = mysqli_query($db, $postQuery);
+            if ($postResult) {
+                while ($row = mysqli_fetch_assoc($postResult)) {
+                    $results['posts'][] = $row;
+                }
+            }
+
+            return $results;
+        } //function to create post
         function createPost($text, $image)
         {
             global $db;
@@ -592,42 +620,51 @@ function showError($field)
             return mysqli_query($db, $query);
         }
 
-
         function generateAISummary($caption = "", $imagePath = "")
         {
-            $apiKey = "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"; // your API key
+            $apiKey = "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";
 
-            // Convert local image path to a public URL
-            $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http";
-            $host = $_SERVER['HTTP_HOST'];
-            $imageUrl = $protocol . "://" . $host . "/img/posts/" . basename($imagePath);
+            // Prepare image data if available
+            $imageData = '';
+            if ($imagePath && file_exists("../img/posts/" . $imagePath)) {
+                $imageData = base64_encode(file_get_contents("../img/posts/" . $imagePath));
+            }
 
-            // Updated payload for OpenRouter
-            $imageData = base64_encode(file_get_contents("../img/posts/" . $imagePath));
+            // Build content array
+            $content = [
+                [
+                    "type" => "text",
+                    "text" => "Analyze this health-related post and provide:
+1. A brief summary of the post.
+2. A list of at least 3 possible conditions that might relate to the symptoms described, each with a likelihood percentage (just the number, without the % sign).
+
+Format your response as JSON with two keys: 'summary' and 'conditions'. The 'conditions' should be an array of objects, each with 'condition' and 'likelihood'.
+
+Caption: $caption"
+                ]
+            ];
+
+            // Add image if available
+            if ($imageData) {
+                $content[] = [
+                    "type" => "image_url",
+                    "image_url" => [
+                        "url" => "data:image/jpeg;base64,$imageData"
+                    ]
+                ];
+            }
 
             $payload = [
                 "model" => "openai/gpt-4o",
                 "messages" => [
                     [
                         "role" => "user",
-                        "content" => [
-                            [
-                                "type" => "text",
-                                "text" => "Describe this image and caption:\nCaption: $caption"
-                            ],
-                            [
-                                "type" => "image_url",
-                                "image_url" => [
-                                    "url" => "data:image/jpeg;base64,$imageData"
-                                ]
-                            ]
-                        ]
+                        "content" => $content
                     ]
                 ],
-                "max_tokens" => 300
+                "max_tokens" => 500,
+                "response_format" => ["type" => "json_object"]
             ];
-
-
 
             $ch = curl_init("https://openrouter.ai/api/v1/chat/completions");
             curl_setopt($ch, CURLOPT_HTTPHEADER, [
@@ -637,20 +674,28 @@ function showError($field)
             curl_setopt($ch, CURLOPT_POST, 1);
             curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($payload));
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
             $response = curl_exec($ch);
             curl_close($ch);
 
             $result = json_decode($response, true);
-
             if (isset($result['choices'][0]['message']['content'])) {
-                return $result['choices'][0]['message']['content'];
-            } else {
-                file_put_contents('ai_error_log.txt', print_r($result, true) . "\n", FILE_APPEND);
-                return "⚠️ No summary generated.";
+                $content = json_decode($result['choices'][0]['message']['content'], true);
+                if ($content && isset($content['summary']) && isset($content['conditions'])) {
+                    return $content;
+                }
             }
-        }
 
+            // Fallback response
+            return [
+                'summary' => "⚠️ No summary generated.",
+                'conditions' => [
+                    ['condition' => 'General Health', 'likelihood' => 75],
+                    ['condition' => 'Preventive Care', 'likelihood' => 60],
+                    ['condition' => 'Lifestyle Factors', 'likelihood' => 45]
+                ]
+            ];
+        }
+        // creating no code
         function createNoCodePost($data, $image)
         {
             global $db;
@@ -672,15 +717,23 @@ function showError($field)
             }
 
             // Generate AI summary
-            $aiSummary = generateAISummary($post_title . " " . $post_desc, $image_name);
-            $aiSummary = mysqli_real_escape_string($db, $aiSummary);
+            $aiResult = generateAISummary($post_title . " " . $post_desc, $image_name);
+            $aiContent = json_encode($aiResult);
+            $aiContent = mysqli_real_escape_string($db, $aiContent);
+
+            // Extract conditions
+            $conditions = '';
+            if (isset($aiResult['conditions']) && is_array($aiResult['conditions'])) {
+                $conditions = json_encode($aiResult['conditions']);
+                $conditions = mysqli_real_escape_string($db, $conditions);
+            }
 
             // Insert into database
-            $query = "INSERT INTO posts(user_id, post_title, post_category, post_desc, post_img, code_status, code_content, post_privacy, spoiler) 
-              VALUES ($user_id, '$post_title', '$post_category', '$post_desc', '$image_name', 0, '$aiSummary', $post_privacy, $spoiler)";
-
+            $query = "INSERT INTO posts(user_id, post_title, post_category, post_desc, post_img, code_status, code_content, possible_conditions, post_privacy, spoiler) 
+              VALUES ($user_id, '$post_title', '$post_category', '$post_desc', '$image_name', 0, '$aiContent', '$conditions', $post_privacy, $spoiler)";
             return mysqli_query($db, $query);
         }
+        //function to validate post
         function validateNewPost($data, $image_data)
         {
             $response = array('status' => true, 'msg' => '', 'field' => '');
@@ -725,45 +778,54 @@ function showError($field)
             return $response;
         }
 
-        // Update getPost function to include new fields
-        function getPost()
+        function getPost($category = null)
         {
             global $db;
             $query = "
-SELECT 
-    u.id AS uid,
-    p.id,
-    p.user_id,
-    p.post_img,
-    p.post_title,
-    p.post_desc,
-    p.post_category,
-    p.code_content,
-    p.code_language,
-    p.tags,
-    p.code_status,
-    p.post_privacy,
-    p.spoiler,
-    p.created_at,
-    u.first_name,
-    u.last_name,
-    u.username,
-    u.profile_pic
-FROM posts p
-JOIN users u ON u.id = p.user_id
-ORDER BY RAND()
-";
+    SELECT 
+        u.id AS uid,
+        p.id,
+        p.user_id,
+        p.post_img,
+        p.post_title,
+        p.post_desc,
+        p.post_category,
+        p.code_content,
+        p.possible_conditions,
+        p.code_language,
+        p.tags,
+        p.code_status,
+        p.post_privacy,
+        p.spoiler,
+        p.created_at,
+        u.first_name,
+        u.last_name,
+        u.username,
+        u.profile_pic
+    FROM posts p
+    JOIN users u ON u.id = p.user_id
+    ";
+
+            // Add category filter if provided
+            if ($category && $category !== 'All Topics') {
+                $category = mysqli_real_escape_string($db, $category);
+                $query .= " WHERE p.post_category = '$category'";
+            }
+
+            $query .= " ORDER BY p.created_at DESC";
             $run = mysqli_query($db, $query);
+
             if (!$run) {
                 die('Query Failed: ' . mysqli_error($db));
             }
+
             $posts = [];
             while ($row = mysqli_fetch_assoc($run)) {
                 $posts[] = $row;
             }
+
             return $posts;
         }
-
         //get post by id
         function getPostById($user_id)
         {

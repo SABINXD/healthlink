@@ -115,6 +115,14 @@
             header('location:../../?reseted');
         }
     }
+    //for live sreach
+    if (isset($_GET['live_search'])) {
+        header('Content-Type: application/json');
+        $keyword = $_POST['keyword'] ?? '';
+        $results = liveSearch($keyword);
+        echo json_encode($results);
+        exit;
+    }
 
     //edit profile 
     if (isset($_GET['updateprofile'])) {
@@ -231,7 +239,7 @@
 
 
 
-  
+
     //ajax for delete post
     if (isset($_GET['deletepost'])) {
         $post_id = $_GET['deletepost'];
