@@ -1,0 +1,1093 @@
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 10:00:57
+POST Data: {"user_id":"174","caption":"."}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php66C8.tmp","error":0,"size":145848}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756800057014","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"146166"}
+
+User ID: 174
+Caption: .
+Is Anonymous: 0
+Image uploaded successfully: post_174_1756800057_68b6a439859da.jpg
+✅ Post created successfully - ID: 174
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+AI analysis request failed.
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 10:15:13
+POST Data: {"user_id":"174","caption":"."}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php77C2.tmp","error":0,"size":145848}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756800913335","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"146166"}
+
+User ID: 174
+Caption: .
+Is Anonymous: 0
+Image uploaded successfully: post_174_1756800913_68b6a791ecf53.jpg
+✅ Post created successfully - ID: 175
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+AI analysis request failed.
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 10:36:50
+POST Data: {"user_id":"174","caption":"."}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php41BD.tmp","error":0,"size":145848}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756802210242","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"146166"}
+
+User ID: 174
+Caption: .
+Is Anonymous: 0
+Image uploaded successfully: post_174_1756802210_68b6aca2bc481.jpg
+✅ Post created successfully - ID: 176
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+AI analysis request failed.
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 10:48:50
+POST Data: {"user_id":"174","caption":"m"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php3E10.tmp","error":0,"size":145848}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756802930206","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"146166"}
+
+User ID: 174
+Caption: m
+Is Anonymous: 0
+Image uploaded successfully: post_174_1756802930_68b6af72bdc5a.jpg
+✅ Post created successfully - ID: 177 with is_anonymous=0
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+AI analysis request failed.
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 11:07:04
+POST Data: {"user_id":"174","caption":"oi"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\phpEDDB.tmp","error":0,"size":145848}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756804023787","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"146167"}
+
+User ID: 174
+Caption: oi
+Is Anonymous: 0
+Image uploaded successfully: post_174_1756804024_68b6b3b873d23.jpg
+Executing SQL INSERT with is_anonymous = 0
+✅ Post created successfully - ID: 178 with is_anonymous=0
+Verified is_anonymous value in database: 0
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+AI analysis request failed.
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 12:00:32
+POST Data: {"user_id":"174","is_anonymous":"1","caption":"."}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\phpE051.tmp","error":0,"size":145848}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756807231607","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"146251"}
+
+User ID: 174
+Caption: .
+Is Anonymous: 1
+Image uploaded successfully: post_174_1756807232_68b6c040171e7.jpg
+Executing SQL INSERT with is_anonymous = 1
+✅ Post created successfully - ID: 179 with is_anonymous=1
+Verified is_anonymous value in database: 1
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+AI analysis request failed.
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 12:24:47
+POST Data: {"user_id":"174","is_anonymous":"1","caption":"post"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php1512.tmp","error":0,"size":145848}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756808686918","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"146254"}
+
+User ID: 174
+Caption: post
+Is Anonymous: 1
+Image uploaded successfully: post_174_1756808687_68b6c5ef6b3df.jpg
+Executing SQL INSERT with is_anonymous = 1
+✅ Post created successfully - ID: 180 with is_anonymous=1
+Verified is_anonymous value in database: 1
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+AI analysis request failed.
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 12:25:09
+POST Data: {"user_id":"174","is_anonymous":"1","caption":"what"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php69DB.tmp","error":0,"size":6432}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756808708637","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"6838"}
+
+User ID: 174
+Caption: what
+Is Anonymous: 1
+Image uploaded successfully: post_174_1756808709_68b6c6050f682.jpg
+Executing SQL INSERT with is_anonymous = 1
+✅ Post created successfully - ID: 181 with is_anonymous=1
+Verified is_anonymous value in database: 1
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+AI analysis request failed.
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 12:25:50
+POST Data: {"user_id":"174","is_anonymous":"0","caption":"what happened to my skin"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\phpC07.tmp","error":0,"size":6432}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756808750118","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"6858"}
+
+User ID: 174
+Caption: what happened to my skin
+Is Anonymous: 0
+Image uploaded successfully: post_174_1756808750_68b6c62e9428c.jpg
+Executing SQL INSERT with is_anonymous = 0
+✅ Post created successfully - ID: 182 with is_anonymous=0
+Verified is_anonymous value in database: 0
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+AI analysis request failed.
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 12:37:20
+POST Data: {"user_id":"174","is_anonymous":"1","caption":"kk"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php9349.tmp","error":0,"size":9123}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756809440103","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"9527"}
+
+User ID: 174
+Caption: kk
+Is Anonymous: 1
+Image uploaded successfully: post_174_1756809440_68b6c8e08d701.jpg
+Executing SQL INSERT with is_anonymous = 1
+✅ Post created successfully - ID: 183 with is_anonymous=1
+Verified is_anonymous value in database: 1
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+AI analysis request failed.
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 13:20:40
+POST Data: {"user_id":"174","is_anonymous":"1","caption":"i dunno"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php3DD7.tmp","error":0,"size":9123}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756812039735","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"9532"}
+
+User ID: 174
+Caption: i dunno
+Is Anonymous: 1
+Image uploaded successfully: post_174_1756812040_68b6d308340f8.jpg
+Executing SQL INSERT with is_anonymous = 1
+✅ Post created successfully - ID: 184 with is_anonymous=1
+Verified is_anonymous value in database: 1
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+AI analysis request failed.
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 13:43:23
+POST Data: {"user_id":"174","caption":"jaja"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\phpD4C.tmp","error":0,"size":145848}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756813403549","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"146169"}
+
+User ID: 174
+Caption: jaja
+Is Anonymous: 0
+Image uploaded successfully: post_174_1756813404_68b6d85c05080.jpg
+Executing SQL INSERT with is_anonymous = 0
+✅ Post created successfully - ID: 185 with is_anonymous=0
+Verified is_anonymous value in database: 0
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+AI analysis request failed.
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 13:44:01
+POST Data: {"user_id":"174","caption":"uhzjz"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php9E91.tmp","error":0,"size":145848}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756813440761","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"146170"}
+
+User ID: 174
+Caption: uhzjz
+Is Anonymous: 0
+Image uploaded successfully: post_174_1756813441_68b6d88132b0a.jpg
+Executing SQL INSERT with is_anonymous = 0
+✅ Post created successfully - ID: 186 with is_anonymous=0
+Verified is_anonymous value in database: 0
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+AI analysis request failed.
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 13:44:44
+POST Data: {"user_id":"174","caption":"isjzj"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php491A.tmp","error":0,"size":145848}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756813484408","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"146170"}
+
+User ID: 174
+Caption: isjzj
+Is Anonymous: 0
+Image uploaded successfully: post_174_1756813484_68b6d8accc5ce.jpg
+Executing SQL INSERT with is_anonymous = 0
+✅ Post created successfully - ID: 187 with is_anonymous=0
+Verified is_anonymous value in database: 0
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+AI analysis request failed.
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 13:45:51
+POST Data: {"user_id":"174","caption":"what wrong with my eyes"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php4D5C.tmp","error":0,"size":9123}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756813551043","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"9463"}
+
+User ID: 174
+Caption: what wrong with my eyes
+Is Anonymous: 0
+Image uploaded successfully: post_174_1756813551_68b6d8ef72773.jpg
+Executing SQL INSERT with is_anonymous = 0
+✅ Post created successfully - ID: 188 with is_anonymous=0
+Verified is_anonymous value in database: 0
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+AI analysis request failed.
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 15:07:35
+POST Data: {"user_id":"174","caption":"post"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php21BC.tmp","error":0,"size":6432}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756818455118","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"6753"}
+
+User ID: 174
+Caption: post
+Is Anonymous: 0
+Image uploaded successfully: post_174_1756818455_68b6ec1776155.jpg
+Executing SQL INSERT with is_anonymous = 0
+✅ Post created successfully - ID: 189 with is_anonymous=0
+Verified is_anonymous value in database: 0
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 724
+No JSON found in AI response.
+Content: I'm sorry, I can't analyze medical images or provide diagnostic information. You should consult a qualified healthcare professional for medical advice and diagnosis.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 15:42:14
+POST Data: {"user_id":"174","caption":"anonymus"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\phpDB33.tmp","error":0,"size":6432}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756820534175","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"6757"}
+
+User ID: 174
+Caption: anonymus
+Is Anonymous: 0
+Image uploaded successfully: post_174_1756820534_68b6f436c2ef7.jpg
+Executing SQL INSERT with is_anonymous = 0
+✅ Post created successfully - ID: 190 with is_anonymous=0
+Verified is_anonymous value in database: 0
+Sending request to OpenRouter API with minimal tokens...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 779
+AI analysis successful. Summary stored.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 16:05:31
+POST Data: {"user_id":"174","caption":"what is this"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php2D17.tmp","error":0,"size":6432}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756821931472","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"6761"}
+
+User ID: 174
+Caption: what is this
+Is Anonymous: 0
+Image uploaded successfully: post_174_1756821931_68b6f9abcbcdc.jpg
+Executing SQL INSERT with is_anonymous = 0
+✅ Post created successfully - ID: 191 with is_anonymous=0
+Verified is_anonymous value in database: 0
+Sending request to OpenRouter API with minimal tokens...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 315
+Insufficient credits for AI analysis. Post created without AI analysis.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 16:14:28
+POST Data: {"user_id":"174","caption":"hvvjgfbjgf"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php5F6C.tmp","error":0,"size":161957}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756822468623","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"162284"}
+
+User ID: 174
+Caption: hvvjgfbjgf
+Is Anonymous: 0
+Image uploaded successfully: post_174_1756822469_68b6fbc50b203.jpg
+Executing SQL INSERT with is_anonymous = 0
+✅ Post created successfully - ID: 192 with is_anonymous=0
+Verified is_anonymous value in database: 0
+Sending request to OpenRouter API with minimal tokens...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 315
+Insufficient credits for AI analysis. Post created without AI analysis.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 16:27:53
+POST Data: {"post_id":"192"}
+FILES Data: []
+Headers: {"Content-Type":"application\/x-www-form-urlencoded; charset=UTF-8","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"12"}
+
+User ID: 0
+Caption: 
+Is Anonymous: 0
+❌ Create post error: Invalid user ID
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 16:27:55
+POST Data: {"post_id":"192"}
+FILES Data: []
+Headers: {"Content-Type":"application\/x-www-form-urlencoded; charset=UTF-8","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"12"}
+
+User ID: 0
+Caption: 
+Is Anonymous: 0
+❌ Create post error: Invalid user ID
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 16:27:56
+POST Data: {"post_id":"192"}
+FILES Data: []
+Headers: {"Content-Type":"application\/x-www-form-urlencoded; charset=UTF-8","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"12"}
+
+User ID: 0
+Caption: 
+Is Anonymous: 0
+❌ Create post error: Invalid user ID
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 16:27:57
+POST Data: {"post_id":"191"}
+FILES Data: []
+Headers: {"Content-Type":"application\/x-www-form-urlencoded; charset=UTF-8","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"12"}
+
+User ID: 0
+Caption: 
+Is Anonymous: 0
+❌ Create post error: Invalid user ID
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 16:28:01
+POST Data: {"post_id":"192"}
+FILES Data: []
+Headers: {"Content-Type":"application\/x-www-form-urlencoded; charset=UTF-8","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"12"}
+
+User ID: 0
+Caption: 
+Is Anonymous: 0
+❌ Create post error: Invalid user ID
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 17:32:59
+POST Data: {"user_id":"174","caption":"gdyddy"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php4128.tmp","error":0,"size":6432}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756827179513","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"6755"}
+
+User ID: 174
+Caption: gdyddy
+Is Anonymous: 0
+Image uploaded successfully: post_174_1756827179_68b70e2bd5cc7.jpg
+✅ Post created successfully - ID: 193 with is_anonymous=0
+Verified is_anonymous value in database: 0
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 315
+Insufficient credits for AI analysis. Using fallback message.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 17:33:48
+POST Data: {"user_id":"174","caption":"xvxgx"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php82.tmp","error":0,"size":9123}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756827228514","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"9445"}
+
+User ID: 174
+Caption: xvxgx
+Is Anonymous: 0
+Image uploaded successfully: post_174_1756827228_68b70e5ccd69a.jpg
+✅ Post created successfully - ID: 194 with is_anonymous=0
+Verified is_anonymous value in database: 0
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 315
+Insufficient credits for AI analysis.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 17:58:21
+POST Data: {"user_id":"174","caption":"chc"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php7A1D.tmp","error":0,"size":6432}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756828701409","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"6752"}
+
+User ID: 174
+Caption: chc
+Is Anonymous: 0
+Image uploaded successfully: post_174_1756828701_68b7141db99e3.jpg
+✅ Post created successfully - ID: 195 with is_anonymous=0
+Verified is_anonymous value in database: 0
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 315
+Insufficient credits for AI analysis.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 18:06:46
+POST Data: {"user_id":"174","is_anonymous":"1","caption":"chcfg"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php2FC0.tmp","error":0,"size":145848}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756829206686","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"146255"}
+
+User ID: 174
+Caption: chcfg
+Is Anonymous: 1
+Image uploaded successfully: post_174_1756829206_68b71616f2852.jpg
+✅ Post created successfully - ID: 196 with is_anonymous=1
+Verified is_anonymous value in database: 1
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 315
+Insufficient credits for AI analysis.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 18:14:17
+POST Data: {"user_id":"174","is_anonymous":"0","caption":"bHs"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php10DC.tmp","error":0,"size":6432}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756829657548","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"6837"}
+
+User ID: 174
+Caption: bHs
+Is Anonymous: 0
+Image uploaded successfully: post_174_1756829658_68b717da095cb.jpg
+✅ Post created successfully - ID: 197 with is_anonymous=0
+Verified is_anonymous value in database: 0
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 315
+Insufficient credits for AI analysis. Using fallback message.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 18:17:37
+POST Data: {"user_id":"174","is_anonymous":"0","caption":"uzjsj"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php1E9A.tmp","error":0,"size":6432}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756829857676","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"6839"}
+
+User ID: 174
+Caption: uzjsj
+Is Anonymous: 0
+Image uploaded successfully: post_174_1756829857_68b718a1f02e6.jpg
+✅ Post created successfully - ID: 198 with is_anonymous=0
+Verified is_anonymous value in database: 0
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 315
+Insufficient credits for AI analysis. Using fallback message.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 18:39:23
+POST Data: {"user_id":"174","is_anonymous":"1","caption":"hjaj"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php96C.tmp","error":0,"size":145848}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756831162963","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"146254"}
+
+User ID: 174
+Caption: hjaj
+Is Anonymous: 1
+Image uploaded successfully: post_174_1756831163_68b71dbb4f59f.jpg
+✅ Post created successfully - ID: 199 with is_anonymous=1
+Verified is_anonymous value in database: 1
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+AI analysis request failed (HTTP 401). Using fallback message.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 19:22:19
+POST Data: {"user_id":"174","caption":"test","spoiler":"1"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php5770.tmp","error":0,"size":145848}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756833738865","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"146249"}
+
+User ID: 174
+Caption: test
+Spoiler: 1
+Image uploaded successfully: post_174_1756833739_68b727cb21587.jpg
+✅ Post created successfully - ID: 200 with spoiler=1
+Verified spoiler value in database: 1
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+AI analysis request failed (HTTP 401). Using fallback message.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 20:24:37
+POST Data: {"user_id":"174","caption":"hshhs"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php6334.tmp","error":0,"size":50302}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756837477466","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"50624"}
+
+User ID: 174
+Caption: hshhs
+Spoiler: 0
+Image uploaded successfully: post_174_1756837477_68b73665aac97.jpg
+✅ Post created successfully - ID: 201 with spoiler=0
+Verified spoiler value in database: 0
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+AI analysis request failed (HTTP 401). Using fallback message.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 20:35:39
+POST Data: {"user_id":"174","caption":"testb","spoiler":"1"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php7B21.tmp","error":0,"size":50302}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756838138965","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"50704"}
+
+User ID: 174
+Caption: testb
+Spoiler: 1
+Image uploaded successfully: post_174_1756838139_68b738fb332d2.jpg
+✅ Post created successfully - ID: 202 with spoiler=1
+Verified spoiler value in database: 1
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 60
+AI analysis request failed (HTTP 401). Using fallback message.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 20:38:55
+POST Data: {"user_id":"174","caption":"jsja","spoiler":"1"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php7C1D.tmp","error":0,"size":50302}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756838335780","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"50703"}
+
+User ID: 174
+Caption: jsja
+Spoiler: 1
+Image uploaded successfully: post_174_1756838336_68b739c00959a.jpg
+✅ Post created successfully - ID: 203 with spoiler=1
+Verified spoiler value in database: 1
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 60
+AI analysis request failed (HTTP 401). Using fallback message.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 21:13:29
+POST Data: {"user_id":"174","caption":"spoiler","spoiler":"1"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\phpA2C.tmp","error":0,"size":50302}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756840410139","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"50706"}
+
+User ID: 174
+Caption: spoiler
+Spoiler: 1
+Image uploaded successfully: post_174_1756840409_68b741d9e858d.jpg
+✅ Post created successfully - ID: 204 with spoiler=1
+Verified spoiler value in database: 1
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 60
+AI analysis request failed (HTTP 401). Using fallback message.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 21:16:16
+POST Data: {"user_id":"174","caption":"cbvngng","spoiler":"1"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php9491.tmp","error":0,"size":145848}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756840576633","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"146252"}
+
+User ID: 174
+Caption: cbvngng
+Spoiler: 1
+Image uploaded successfully: post_174_1756840576_68b7428067662.jpg
+✅ Post created successfully - ID: 205 with spoiler=1
+Verified spoiler value in database: 1
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 60
+AI analysis request failed (HTTP 401). Using fallback message.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 21:28:55
+POST Data: {"user_id":"174","caption":"tjnv v","spoiler":"1"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php298A.tmp","error":0,"size":50302}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756841335679","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"50705"}
+
+User ID: 174
+Caption: tjnv v
+Spoiler: 1
+Image uploaded successfully: post_174_1756841335_68b745777332d.jpg
+✅ Post created successfully - ID: 206 with spoiler=1
+Verified spoiler value in database: 1
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 60
+AI analysis request failed (HTTP 401). Using fallback message.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 21:38:24
+POST Data: {"user_id":"174","caption":"fcc","spoiler":"1"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\phpD823.tmp","error":0,"size":50302}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756841904667","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"50702"}
+
+User ID: 174
+Caption: fcc
+Spoiler: 1
+Image uploaded successfully: post_174_1756841904_68b747b0730cc.jpg
+✅ Post created successfully - ID: 207 with spoiler=1
+Verified spoiler value in database: 1
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 60
+AI analysis request failed (HTTP 401). Using fallback message.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 21:52:35
+POST Data: {"user_id":"174","caption":"zjdisje","spoiler":"1"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\phpD546.tmp","error":0,"size":50302}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756842755918","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"50706"}
+
+User ID: 174
+Caption: zjdisje
+Spoiler: 1
+Image uploaded successfully: post_174_1756842755_68b74b03a5f22.jpg
+✅ Post created successfully - ID: 208 with spoiler=1
+Verified spoiler value in database: 1
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 60
+AI analysis request failed (HTTP 401). Using fallback message.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 23:12:57
+POST Data: {"user_id":"174","caption":"xgdgd","spoiler":"0"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php692B.tmp","error":0,"size":283386}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756847577933","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"283788"}
+
+User ID: 174
+Caption: xgdgd
+Image uploaded successfully: post_174_1756847577_68b75dd9a36af.jpg
+✅ Post created successfully - ID: 212
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+AI analysis request failed.
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 23:13:25
+POST Data: {"user_id":"174","caption":"gdgdh","spoiler":"0"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\phpD7A5.tmp","error":0,"size":50302}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756847606192","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"50704"}
+
+User ID: 174
+Caption: gdgdh
+Image uploaded successfully: post_174_1756847605_68b75df5e3596.jpg
+✅ Post created successfully - ID: 213
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+AI analysis request failed.
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 23:14:04
+POST Data: {"user_id":"174","caption":"gdgdg","spoiler":"0"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php6D4E.tmp","error":0,"size":50302}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756847644547","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"50704"}
+
+User ID: 174
+Caption: gdgdg
+Image uploaded successfully: post_174_1756847644_68b75e1c39b35.jpg
+✅ Post created successfully - ID: 214
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+AI analysis request failed.
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 23:15:15
+POST Data: {"user_id":"174","caption":"vxhc","spoiler":"0"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php84DA.tmp","error":0,"size":50302}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756847716105","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"50703"}
+
+User ID: 174
+Caption: vxhc
+Image uploaded successfully: post_174_1756847715_68b75e63c189e.jpg
+✅ Post created successfully - ID: 215
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+AI analysis request failed.
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-02 23:21:37
+POST Data: {"user_id":"174","caption":"gxgd","spoiler":"0"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php59C6.tmp","error":0,"size":6432}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756848098307","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"6833"}
+
+User ID: 174
+Caption: gxgd
+Image uploaded successfully: post_174_1756848098_68b75fe2057c6.jpg
+✅ Post created successfully - ID: 216
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 1493
+AI analysis successful. Summary stored.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-03 01:06:55
+POST Data: {"user_id":"174","caption":"zvxxg","spoiler":"1"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\phpC1A7.tmp","error":0,"size":14559}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756854416389","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"14961"}
+
+User ID: 174
+Caption: zvxxg
+Spoiler: 1
+Image uploaded successfully: post_174_1756854416_68b778900bca2.jpg
+✅ Post created successfully - ID: 217
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 742
+No JSON found in AI response.
+Content: I'm unable to analyze medical conditions from images. I recommend consulting a medical professional for accurate diagnosis and information.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-03 01:10:16
+POST Data: {"user_id":"174","caption":"gex d","spoiler":"1"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\phpD2C1.tmp","error":0,"size":50302}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756854617401","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"50704"}
+
+User ID: 174
+Caption: gex d
+Spoiler: 1
+Image uploaded successfully: post_174_1756854617_68b7795906334.jpg
+✅ Post created successfully - ID: 218
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 978
+No JSON found in AI response.
+Content: I'm unable to analyze medical images. If you have access to such images, reviewing them with a licensed medical professional is the best course of action. They can provide accurate and relevant medical advice.
+
+If you have questions about specific conditions, I can provide general information and resources based on text data.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-03 01:23:20
+POST Data: {"user_id":"174","caption":"hhhhh","spoiler":"0"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\phpC663.tmp","error":0,"size":6432}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756855400666","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"6834"}
+
+User ID: 174
+Caption: hhhhh
+Spoiler: 0
+Image uploaded successfully: post_174_1756855400_68b77c6849452.jpg
+✅ Post created successfully - ID: 219
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 927
+No JSON found in AI response.
+Content: I'm unable to analyze or identify specific conditions from medical images. However, if you provide additional textual information about the symptoms, I can help you with general information. It's important to consult a healthcare professional for any medical diagnosis.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-03 01:25:57
+POST Data: {"user_id":"174","caption":"yfgch","spoiler":"0"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php2BDB.tmp","error":0,"size":5268}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756855557711","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"5670"}
+
+User ID: 174
+Caption: yfgch
+Spoiler: 0
+Image uploaded successfully: post_174_1756855557_68b77d054f15b.jpg
+✅ Post created successfully - ID: 220
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 1529
+AI analysis successful. Summary stored.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-03 01:27:09
+POST Data: {"user_id":"174","caption":"c,c","spoiler":"1"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php454B.tmp","error":0,"size":236592}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756855629760","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"236992"}
+
+User ID: 174
+Caption: c,c
+Spoiler: 1
+Image uploaded successfully: post_174_1756855629_68b77d4d8581c.jpg
+✅ Post created successfully - ID: 221
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 868
+No JSON found in AI response.
+Content: I'm unable to analyze or identify details from the image you've provided. If you need analysis of a medical image, please ensure it's relevant, and I can help explain medical conditions in text form or respond to queries about them.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-03 01:27:41
+POST Data: {"user_id":"174","caption":"zv","spoiler":"1"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\phpC1B0.tmp","error":0,"size":4203}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756855661617","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"4602"}
+
+User ID: 174
+Caption: zv
+Spoiler: 1
+Image uploaded successfully: post_174_1756855661_68b77d6d2e7bf.jpg
+✅ Post created successfully - ID: 222
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 820
+No JSON found in AI response.
+Content: I'm unable to analyze medical images. However, if you describe the condition or provide more context, I might be able to help you with general information on possible conditions. Always consult a healthcare professional for medical advice.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-03 01:28:22
+POST Data: {"user_id":"174","caption":"api","spoiler":"1"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php637F.tmp","error":0,"size":6432}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756855703008","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"6832"}
+
+User ID: 174
+Caption: api
+Spoiler: 1
+Image uploaded successfully: post_174_1756855702_68b77d96a3533.jpg
+✅ Post created successfully - ID: 223
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 1420
+AI analysis successful. Summary stored.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-03 01:29:21
+POST Data: {"user_id":"174","caption":"ucchf","spoiler":"1"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php4AF2.tmp","error":0,"size":7687}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756855762280","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"8089"}
+
+User ID: 174
+Caption: ucchf
+Spoiler: 1
+Image uploaded successfully: post_174_1756855761_68b77dd1e2964.jpg
+✅ Post created successfully - ID: 224
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 1422
+AI analysis successful. Summary stored.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-03 02:30:12
+POST Data: {"user_id":"174","caption":"How to stop hairfall","spoiler":"0"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\phpFFD3.tmp","error":0,"size":8864}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1756859413105","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"10.40.20.108","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"9281"}
+
+User ID: 174
+Caption: How to stop hairfall
+Spoiler: 0
+Image uploaded successfully: post_174_1756859412_68b78c14a642c.jpg
+✅ Post created successfully - ID: 225
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 1374
+AI analysis successful. Summary stored.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-08 01:23:56
+POST Data: {"user_id":"187","caption":"oi","spoiler":"0"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php6FB1.tmp","error":0,"size":48751}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1757287435316","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"192.168.1.12","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"49150"}
+
+User ID: 187
+Caption: oi
+Spoiler: 0
+Image uploaded successfully: post_187_1757287436_68be140cded1b.jpg
+✅ Post created successfully - ID: 157
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+AI analysis request failed.
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-08 01:35:17
+POST Data: {"user_id":"187","caption":"oi","spoiler":"0"}
+FILES Data: []
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1757288116478","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"192.168.1.10","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"272"}
+
+User ID: 187
+Caption: oi
+Spoiler: 0
+ERROR: Image is required
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-08 01:35:22
+POST Data: {"user_id":"187","caption":"oi","spoiler":"0"}
+FILES Data: []
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1757288122044","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"192.168.1.10","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"272"}
+
+User ID: 187
+Caption: oi
+Spoiler: 0
+ERROR: Image is required
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-08 01:35:27
+POST Data: {"user_id":"187","caption":"oi","spoiler":"0"}
+FILES Data: []
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1757288127010","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"192.168.1.10","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"272"}
+
+User ID: 187
+Caption: oi
+Spoiler: 0
+ERROR: Image is required
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-08 01:37:56
+POST Data: {"user_id":"187","caption":"oi","spoiler":"0"}
+FILES Data: []
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1757288275579","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"192.168.1.10","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"272"}
+
+User ID: 187
+Caption: oi
+Spoiler: 0
+No image uploaded. Proceeding without image.
+✅ Post created successfully - ID: 158
+No image provided, skipping AI analysis.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-08 01:44:57
+POST Data: {"user_id":"187","caption":"serious issue","spoiler":"0"}
+FILES Data: []
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1757288697094","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"192.168.1.10","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"283"}
+
+User ID: 187
+Caption: serious issue
+Spoiler: 0
+No image uploaded. Proceeding without image.
+✅ Post created successfully - ID: 159
+No image provided, skipping AI analysis.
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-08 01:46:03
+POST Data: {"user_id":"187","caption":"why is my eye like this?","spoiler":"0"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\phpADC3.tmp","error":0,"size":8776}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1757288762343","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"192.168.1.10","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"9197"}
+
+User ID: 187
+Caption: why is my eye like this?
+Spoiler: 0
+Image uploaded successfully: post_187_1757288763_68be193b5b3d7.jpg
+✅ Post created successfully - ID: 160
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+AI analysis request failed.
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-08 01:49:12
+POST Data: {"user_id":"187","caption":"ooi","spoiler":"1"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php926F.tmp","error":0,"size":8776}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1757288951984","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"192.168.1.10","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"9176"}
+
+User ID: 187
+Caption: ooi
+Spoiler: 1
+Image uploaded successfully: post_187_1757288952_68be19f8f2020.jpg
+✅ Post created successfully - ID: 161
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+AI analysis request failed.
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-08 02:18:23
+POST Data: []
+FILES Data: []
+Headers: {"Host":"localhost","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Brave\";v=\"140\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/140.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8","Sec-GPC":"1","Accept-Language":"en-US,en;q=0.9","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost\/healthlink\/api\/","Accept-Encoding":"gzip, deflate, br, zstd","Cookie":"admin_auth=1"}
+
+User ID: 0
+Caption: 
+Spoiler: 0
+ERROR: Invalid user ID: 0
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-08 02:18:35
+POST Data: {"has_image":"1","user_id":"187","caption":"oiii what happened to my eyes?","spoiler":"1"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php782E.tmp","error":0,"size":8776}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1757290714707","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"192.168.1.10","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"9285"}
+
+User ID: 187
+Caption: oiii what happened to my eyes?
+Spoiler: 1
+Image uploaded successfully: post_187_1757290715_68be20dbc0afd.jpg
+✅ Post created successfully - ID: 162
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 60
+AI analysis request failed.
+HTTP Code: 401
+Response: {"error":{"message":"No auth credentials found","code":401}}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-08 02:42:45
+POST Data: {"has_image":"1","user_id":"187","caption":"spoiler","spoiler":"1"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\php96D7.tmp","error":0,"size":8776}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1757292164408","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"192.168.1.10","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"9262"}
+
+User ID: 187
+Caption: spoiler
+Spoiler: 1
+Image uploaded successfully: post_187_1757292165_68be26856661f.jpg
+✅ Post created successfully - ID: 163
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+AI analysis request failed.
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== NEW POST REQUEST ===
+Timestamp: 2025-09-08 03:14:38
+POST Data: {"has_image":"1","user_id":"187","caption":"heoak","spoiler":"1","category":"Dermatology"}
+FILES Data: {"post_img":{"name":"post.jpg","full_path":"post.jpg","type":"image\/jpeg","tmp_name":"C:\\xampp\\tmp\\phpC87A.tmp","error":0,"size":8776}}
+Headers: {"Content-Type":"multipart\/form-data; boundary=apiclient-1757294077693","User-Agent":"Dalvik\/2.1.0 (Linux; U; Android 15; 2404ARN45A Build\/AP3A.240905.015.A2)","Host":"192.168.1.10","Connection":"Keep-Alive","Accept-Encoding":"gzip","Content-Length":"9351"}
+
+User ID: 187
+Caption: heoak
+Spoiler: 1
+Image uploaded successfully: post_187_1757294078_68be2dfe986fc.jpg
+✅ Post created successfully - ID: 164
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+AI analysis request failed.
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}

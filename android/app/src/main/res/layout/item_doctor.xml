@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="#E0F2FE"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/doctorImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/doctor_placeholder"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#10B981" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/doctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#1F2937"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                tools:text="Dr. Sarah Johnson" />
+
+            <TextView
+                android:id="@+id/doctorExperience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#6B7280"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="2dp"
+                tools:text="12 years experience • Rating: 4.8/5" />
+
+            <TextView
+                android:id="@+id/doctorAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#9CA3AF"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="4dp"
+                tools:text="New York Medical Center" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/doctorSpecialty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Dermatology"
+                android:textColor="#059669"
+                android:textSize="12sp"
+                app:chipBackgroundColor="#D1FAE5"
+                app:chipStrokeWidth="0dp"
+                tools:text="Dermatology" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/consultButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Consult"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:backgroundTint="#10B981"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="8dp"
+                app:cornerRadius="8dp" />
+
+            <Button
+                android:id="@+id/viewProfileButton"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="View Profile"
+                android:textColor="#10B981"
+                android:textSize="11sp"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="sans-serif-medium"
+                app:strokeColor="#10B981"
+                app:strokeWidth="1dp"
+                app:cornerRadius="8dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:theme="?attr/actionBarTheme"
+            app:titleTextColor="#1F2937"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:title="Post Details" />
+
+        <!-- Post Content Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Post Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/user_profile_pic"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginEnd="12dp"
+                        android:src="@drawable/profile_placeholder"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#E5E7EB" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/post_author_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#1F2937"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-medium"
+                            tools:text="Jennifer Lee" />
+
+                        <TextView
+                            android:id="@+id/post_author_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#6B7280"
+                            android:textSize="13sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_marginTop="2dp"
+                            tools:text="3 hours ago" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Post Title -->
+                <TextView
+                    android:id="@+id/post_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1F2937"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="16dp"
+                    tools:text="Skin rash that won't go away - any ideas?" />
+
+                <!-- Post Images Container -->
+                <FrameLayout
+                    android:id="@+id/post_images_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/post_image"
+                            android:layout_width="0dp"
+                            android:layout_height="300dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/rounded_image_background"
+                            android:layout_marginEnd="8dp"
+                            tools:src="@tools:sample/avatars" />
+
+                        <ImageView
+                            android:id="@+id/post_image_2"
+                            android:layout_width="0dp"
+                            android:layout_height="300dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/rounded_image_background"
+                            android:layout_marginStart="8dp"
+                            android:visibility="gone"
+                            tools:src="@tools:sample/avatars" />
+
+                    </LinearLayout>
+
+                    <!-- Spoiler Overlay for Post Details -->
+                    <LinearLayout
+                        android:id="@+id/spoiler_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#80000000"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/eye_open"
+                            android:layout_marginBottom="16dp"
+                            app:tint="#FFFFFF" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sensitive Content"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="sans-serif-medium" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="This content may contain sensitive medical imagery"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="20dp"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif" />
+
+                        <Button
+                            android:id="@+id/unblur_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:text="View Content"
+                            android:textColor="#1F2937"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:backgroundTint="#FFFFFF"
+                            android:fontFamily="sans-serif-medium"
+                            android:paddingHorizontal="32dp"
+                            app:cornerRadius="24dp" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <!-- Post Description -->
+                <TextView
+                    android:id="@+id/post_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="6dp"
+                    android:textSize="16sp"
+                    android:textColor="#374151"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginBottom="16dp"
+                    tools:text="I've had this rash on my forearm for about 3 weeks now. It started as small red bumps and has spread slightly. It's itchy but not painful. I've tried over-the-counter hydrocortisone cream but it hasn't helped much. Any ideas what this could be?" />
+
+                <!-- Tags -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/tags_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- AI Summary Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ai_summary_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#E0E7FF"
+            app:cardBackgroundColor="#F0F4FF"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="12dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        app:tint="#4F46E5"
+                        android:layout_marginEnd="12dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="AI Medical Analysis"
+                        android:textColor="#4F46E5"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-medium" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ai_summary_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="#374151"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif"
+                    tools:text="Based on the symptoms described, this could be tension headaches. Consider stress management, regular sleep schedule, and staying hydrated. Consult a healthcare provider if symptoms persist." />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Consult a Doctor Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#D1FAE5"
+            app:cardBackgroundColor="#F0FDF4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_medical_services"
+                        app:tint="#10B981"
+                        android:layout_marginEnd="12dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Consult a Doctor"
+                        android:textColor="#10B981"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-medium" />
+
+                </LinearLayout>
+
+                <!-- Doctors RecyclerView -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/doctors_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Comments Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Comments Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp"
+                    android:paddingBottom="12dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Discussion"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#1F2937"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/comment_icon"
+                        app:tint="#6B7280" />
+
+                </LinearLayout>
+
+                <!-- Comments RecyclerView -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/comments_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="12dp"
+                    android:paddingBottom="12dp" />
+
+                <!-- No Comments Message -->
+                <TextView
+                    android:id="@+id/no_comments_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No comments yet. Be the first to share your thoughts!"
+                    android:textSize="14sp"
+                    android:textColor="#9CA3AF"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    android:visibility="gone"
+                    android:fontFamily="sans-serif" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

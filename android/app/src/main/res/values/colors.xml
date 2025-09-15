@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="primary">#2c7a7b</color>
+    <color name="primary_light">#4fd1c5</color>
+    <color name="primary_dark">#2a6b6c</color>
+    <color name="secondary">#4a5568</color>
+    <color name="background_light">#f8fafc</color>
+    <color name="text_primary">#2d3748</color>
+    <color name="text_secondary">#718096</color>
+    <color name="border">#e2e8f0</color>
+    <color name="success">#38a169</color>
+    <color name="danger">#e53e3e</color>
+    <color name="rating">#ffd700</color>
+    <!-- Bottom Navigation Colors -->
+    <color name="bottom_nav_selected">#2c7a7b</color>
+    <color name="bottom_nav_unselected">#a0aec0</color>
+    <color name="bottom_nav_color">#2c7a7b</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <!-- Primary Healthcare Color Palette -->
+    <color name="primary1">#1f2937</color>
+    <color name="on_primary">#ffffff</color>
+    <color name="primary_container">#e5e7eb</color>
+    <color name="on_primary_container">#1f2937</color>
+
+    <!-- Missing colors -->
+    <color name="status_red">#F44336</color>
+    <color name="tech_blue">#2196F3</color>
+    <color name="tech_blue_50">#BBDEFB</color>
+    <color name="danger_red">#D32F2F</color>
+    <color name="success_green">#4CAF50</color>
+    <color name="lightgray">#D3D3D3</color>
+
+
+    <!-- Time slot colors -->
+    <color name="time_slot_booked_bg">#FFCDD2</color>
+    <color name="time_slot_booked_text">#B71C1C</color>
+    <color name="time_slot_past_bg">#EEEEEE</color>
+    <color name="time_slot_past_text">#757575</color>
+    <color name="time_slot_available_bg">#FFFFFF</color>
+    <color name="time_slot_available_text">#000000</color>
+    <!-- Secondary & Accent Colors -->
+    <color name="secondary1">#8b5cf6</color>
+    <color name="on_secondary">#ffffff</color>
+    <color name="secondary_container">#f3f4f6</color>
+    <color name="on_secondary_container">#8b5cf6</color>
+
+    <!-- Surface Colors -->
+    <color name="surface">#ffffff</color>
+    <color name="on_surface">#1f2937</color>
+    <color name="surface_variant">#f8fafc</color>
+    <color name="on_surface_variant">#6b7280</color>
+    <color name="surface_container">#f1f5f9</color>
+    <color name="surface_container_low">#fafbfc</color>
+
+    <!-- Background Colors -->
+    <color name="background">#ffffff</color>
+    <color name="background_gradient">#fafbfc</color>
+    <color name="on_background">#1f2937</color>
+
+    <!-- Outline Colors -->
+    <color name="outline">#d1d5db</color>
+    <color name="outline_variant">#e5e7eb</color>
+
+    <!-- Semantic Colors -->
+    <color name="success1">#059669</color>
+    <color name="warning">#f59e0b</color>
+    <color name="error">#dc2626</color>
+    <color name="info">#0891b2</color>
+
+    <!-- Legacy Support -->
+    <color name="text_primary1">#1f2937</color>
+    <color name="text_secondary1">#6b7280</color>
+    <color name="border1">#d1d5db</color>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <color name="primary_foreground">#f8fafc</color>
+
+
+
+    <color name="secondary_foreground">#ffffff</color>
+    <color name="secondary_light">#a855f7</color>
+    <color name="secondary_dark">#5b21b6</color>
+
+    <!-- Background & Surface Colors -->
+
+    <color name="foreground">#0f172a</color>
+
+    <!-- Card & Surface Variants -->
+    <color name="card">#ffffff</color>
+    <color name="card_foreground">#0f172a</color>
+
+
+    <!-- Text Colors -->
+    <color name="muted">#f1f5f9</color>
+    <color name="muted_foreground">#64748b</color>
+
+
+
+
+    <!-- Input & Form Colors -->
+    <color name="input">#f8fafc</color>
+    <color name="input_border">#e2e8f0</color>
+    <color name="input_focused">#0f172a</color>
+
+    <!-- Accent Colors -->
+    <color name="accent">#dbeafe</color>
+    <color name="accent_foreground">#1e40af</color>
+
+    <!-- Semantic Colors -->
+    <color name="success_foreground">#ffffff</color>
+    <color name="success_light">#d1fae5</color>
+
+
+    <color name="warning_foreground">#ffffff</color>
+    <color name="warning_light">#fef3c7</color>
+
+
+    <color name="error_foreground">#ffffff</color>
+    <color name="error_light">#fee2e2</color>
+
+
+    <color name="info_foreground">#ffffff</color>
+    <color name="info_light">#cffafe</color>
+
+    <!-- Healthcare Specific Colors -->
+    <color name="health_primary">#0f766e</color>
+    <color name="health_secondary">#06b6d4</color>
+    <color name="health_accent">#10b981</color>
+
+    <!-- Interactive States -->
+    <color name="hover">#f1f5f9</color>
+    <color name="pressed">#e2e8f0</color>
+    <color name="disabled">#94a3b8</color>
+    <color name="disabled_foreground">#cbd5e1</color>
+
+        <!-- Primary Colors -->
+        <color name="colorPrimary">#6200EE</color>
+        <color name="colorPrimaryDark">#3700B3</color>
+        <color name="colorAccent">#03DAC5</color>
+
+        <!-- Missing Colors -->
+        <color name="accent_emerald">#00C896</color>
+        <color name="darkgray">#A9A9A9</color>
+        <color name="statusbarcolo">#3700B3</color>
+        <color name="bg_primary">#FFFFFF</color>
+        <color name="yourSelectedColor">#FF4081</color>
+
+
+        <color name="gray">#808080</color>
+        <color name="light_gray">#D3D3D3</color>
+        <color name="red">#FF0000</color>
+        <color name="green">#00FF00</color>
+        <color name="blue">#0000FF</color>
+
+</resources>

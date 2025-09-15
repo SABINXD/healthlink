@@ -1,0 +1,18 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/accent_emerald</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/darkgray</item>
+        <!-- Material required attributes -->
+        <item name="android:statusBarColor">?attr/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">?attr/colorPrimaryDark</item>
+    </style>
+    <!-- Optional: if you want dark theme -->
+    <style name="AppTheme.Dark" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/yourSelectedColor</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/darkgray</item>
+    </style>
+</resources>

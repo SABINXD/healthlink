@@ -1,0 +1,1178 @@
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 09:44:18
+POST Data: {"post_id":"172"}
+
+Post ID: 172
+Post found: {"id":"172","user_id":"174","post_img":"post_174_1756798947_68b69fe37d299.jpg","post_text":"o","created_at":"2025-09-02 13:27:27","code_status":"0","is_anonymous":"0","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 844
+ERROR: No JSON found in AI response
+Content: I'm sorry, but I can't analyze the medical image as requested. The image you provided appears to show a laptop and a coffee cup. If you have any other non-image-related questions or need text-based information, feel free to ask!
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 09:44:20
+POST Data: {"post_id":"172"}
+
+Post ID: 172
+Post found: {"id":"172","user_id":"174","post_img":"post_174_1756798947_68b69fe37d299.jpg","post_text":"o","created_at":"2025-09-02 13:27:27","code_status":"0","is_anonymous":"0","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 852
+ERROR: No JSON found in AI response
+Content: I'm unable to analyze the condition from this image as it doesn't contain medical content. It appears to show a laptop and a cup of coffee. If you have a medical image you need analyzed, please provide it, and I'll be happy to help where possible.
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 10:18:35
+POST Data: {"post_id":"175"}
+
+Post ID: 175
+Post found: {"id":"175","user_id":"174","post_img":"post_174_1756800913_68b6a791ecf53.jpg","post_text":".","created_at":"2025-09-02 14:00:13","code_status":"0","is_anonymous":"1","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+ERROR: AI analysis request failed
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 10:18:35
+POST Data: {"post_id":"175"}
+
+Post ID: 175
+Post found: {"id":"175","user_id":"174","post_img":"post_174_1756800913_68b6a791ecf53.jpg","post_text":".","created_at":"2025-09-02 14:00:13","code_status":"0","is_anonymous":"1","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+ERROR: AI analysis request failed
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 10:18:34
+POST Data: {"post_id":"175"}
+
+Post ID: 175
+Post found: {"id":"175","user_id":"174","post_img":"post_174_1756800913_68b6a791ecf53.jpg","post_text":".","created_at":"2025-09-02 14:00:13","code_status":"0","is_anonymous":"1","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+ERROR: AI analysis request failed
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 10:18:37
+POST Data: {"post_id":"175"}
+
+Post ID: 175
+Post found: {"id":"175","user_id":"174","post_img":"post_174_1756800913_68b6a791ecf53.jpg","post_text":".","created_at":"2025-09-02 14:00:13","code_status":"0","is_anonymous":"1","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+ERROR: AI analysis request failed
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 12:23:57
+POST Data: {"post_id":"174"}
+
+Post ID: 174
+Post found: {"id":"174","user_id":"174","post_img":"post_174_1756800057_68b6a439859da.jpg","post_text":".","created_at":"2025-09-02 13:45:57","code_status":"0","is_anonymous":"1","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+ERROR: AI analysis request failed
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 12:24:00
+POST Data: {"post_id":"174"}
+
+Post ID: 174
+Post found: {"id":"174","user_id":"174","post_img":"post_174_1756800057_68b6a439859da.jpg","post_text":".","created_at":"2025-09-02 13:45:57","code_status":"0","is_anonymous":"1","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+ERROR: AI analysis request failed
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 12:34:53
+POST Data: {"post_id":"182"}
+
+Post ID: 182
+Post found: {"id":"182","user_id":"174","post_img":"post_174_1756808750_68b6c62e9428c.jpg","post_text":"what happened to my skin","created_at":"2025-09-02 16:10:50","code_status":"0","is_anonymous":"1","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+ERROR: AI analysis request failed
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 12:34:52
+POST Data: {"post_id":"181"}
+
+Post ID: 181
+Post found: {"id":"181","user_id":"174","post_img":"post_174_1756808709_68b6c6050f682.jpg","post_text":"what","created_at":"2025-09-02 16:10:09","code_status":"0","is_anonymous":"1","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+ERROR: AI analysis request failed
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 12:34:59
+POST Data: {"post_id":"180"}
+
+Post ID: 180
+Post found: {"id":"180","user_id":"174","post_img":"post_174_1756808687_68b6c5ef6b3df.jpg","post_text":"post","created_at":"2025-09-02 16:09:47","code_status":"0","is_anonymous":"1","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+ERROR: AI analysis request failed
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 12:35:00
+POST Data: {"post_id":"179"}
+
+Post ID: 179
+Post found: {"id":"179","user_id":"174","post_img":"post_174_1756807232_68b6c040171e7.jpg","post_text":".","created_at":"2025-09-02 15:45:32","code_status":"0","is_anonymous":"1","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+ERROR: AI analysis request failed
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 12:35:02
+POST Data: {"post_id":"178"}
+
+Post ID: 178
+Post found: {"id":"178","user_id":"174","post_img":"post_174_1756804024_68b6b3b873d23.jpg","post_text":"oi","created_at":"2025-09-02 14:52:04","code_status":"0","is_anonymous":"1","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+ERROR: AI analysis request failed
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 12:35:14
+POST Data: {"post_id":"182"}
+
+Post ID: 182
+Post found: {"id":"182","user_id":"174","post_img":"post_174_1756808750_68b6c62e9428c.jpg","post_text":"what happened to my skin","created_at":"2025-09-02 16:10:50","code_status":"0","is_anonymous":"1","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+ERROR: AI analysis request failed
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 12:37:25
+POST Data: {"post_id":"183"}
+
+Post ID: 183
+Post found: {"id":"183","user_id":"174","post_img":"post_174_1756809440_68b6c8e08d701.jpg","post_text":"kk","created_at":"2025-09-02 16:22:20","code_status":"0","is_anonymous":"1","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+ERROR: AI analysis request failed
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 12:58:54
+POST Data: {"post_id":"183"}
+
+Post ID: 183
+Post found: {"id":"183","user_id":"174","post_img":"post_174_1756809440_68b6c8e08d701.jpg","post_text":"kk","created_at":"2025-09-02 16:22:20","code_status":"0","is_anonymous":"1","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+ERROR: AI analysis request failed
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 12:58:59
+POST Data: {"post_id":"182"}
+
+Post ID: 182
+Post found: {"id":"182","user_id":"174","post_img":"post_174_1756808750_68b6c62e9428c.jpg","post_text":"what happened to my skin","created_at":"2025-09-02 16:10:50","code_status":"0","is_anonymous":"1","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+ERROR: AI analysis request failed
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 13:35:33
+POST Data: {"post_id":"184"}
+
+Post ID: 184
+Post found: {"id":"184","user_id":"174","post_img":"post_174_1756812040_68b6d308340f8.jpg","post_text":"i dunno","created_at":"2025-09-02 17:05:40","code_status":"0","is_anonymous":"1","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+ERROR: AI analysis request failed
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 13:36:56
+POST Data: {"post_id":"184"}
+
+Post ID: 184
+Post found: {"id":"184","user_id":"174","post_img":"post_174_1756812040_68b6d308340f8.jpg","post_text":"i dunno","created_at":"2025-09-02 17:05:40","code_status":"0","is_anonymous":"1","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+ERROR: AI analysis request failed
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 13:38:56
+POST Data: {"post_id":"184"}
+
+Post ID: 184
+Post found: {"id":"184","user_id":"174","post_img":"post_174_1756812040_68b6d308340f8.jpg","post_text":"i dunno","created_at":"2025-09-02 17:05:40","code_status":"0","is_anonymous":"1","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+ERROR: AI analysis request failed
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 899. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 13:48:32
+POST Data: {"post_id":"188"}
+
+Post ID: 188
+Post found: {"id":"188","user_id":"174","post_img":"post_174_1756813551_68b6d8ef72773.jpg","post_text":"what wrong with my eyes","created_at":"2025-09-02 17:30:51","code_status":"0","is_anonymous":"0","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 1288
+AI summary generated and saved successfully
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 13:48:48
+POST Data: {"post_id":"187"}
+
+Post ID: 187
+Post found: {"id":"187","user_id":"174","post_img":"post_174_1756813484_68b6d8accc5ce.jpg","post_text":"isjzj","created_at":"2025-09-02 17:29:44","code_status":"0","is_anonymous":"0","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 853
+ERROR: No JSON found in AI response
+Content: I'm unable to analyze medical conditions from this image, as it does not contain any medical or diagnostic content. It appears to be a photo of a laptop and a coffee cup. If you have a specific medical inquiry or need information, feel free to ask!
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 13:48:51
+POST Data: {"post_id":"186"}
+
+Post ID: 186
+Post found: {"id":"186","user_id":"174","post_img":"post_174_1756813441_68b6d88132b0a.jpg","post_text":"uhzjz","created_at":"2025-09-02 17:29:01","code_status":"0","is_anonymous":"0","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 722
+ERROR: No JSON found in AI response
+Content: I'm unable to analyze medical conditions from this image. If you have any other questions or need information, feel free to ask!
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 13:48:53
+POST Data: {"post_id":"185"}
+
+Post ID: 185
+Post found: {"id":"185","user_id":"174","post_img":"post_174_1756813404_68b6d85c05080.jpg","post_text":"jaja","created_at":"2025-09-02 17:28:24","code_status":"0","is_anonymous":"0","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 770
+ERROR: No JSON found in AI response
+Content: I'm sorry, but this is not a medical image. It appears to be an image of a laptop and a cup. If you have another image or specific medical query, feel free to share!
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 13:48:54
+POST Data: {"post_id":"184"}
+
+Post ID: 184
+Post found: {"id":"184","user_id":"174","post_img":"post_174_1756812040_68b6d308340f8.jpg","post_text":"i dunno","created_at":"2025-09-02 17:05:40","code_status":"0","is_anonymous":"1","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 1372
+AI summary generated and saved successfully
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 14:03:09
+POST Data: {"post_id":"187"}
+
+Post ID: 187
+Post found: {"id":"187","user_id":"174","post_img":"post_174_1756813484_68b6d8accc5ce.jpg","post_text":"isjzj","created_at":"2025-09-02 17:29:44","code_status":"0","is_anonymous":"0","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 770
+ERROR: No JSON found in AI response
+Content: I'm sorry, I cannot interpret images or provide medical analysis. Please provide a valid medical image and consult with a healthcare professional for medical advice.
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 14:03:19
+POST Data: {"post_id":"186"}
+
+Post ID: 186
+Post found: {"id":"186","user_id":"174","post_img":"post_174_1756813441_68b6d88132b0a.jpg","post_text":"uhzjz","created_at":"2025-09-02 17:29:01","code_status":"0","is_anonymous":"0","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 798
+ERROR: No JSON found in AI response
+Content: I'm unable to provide an analysis because the image you uploaded is not a medical image. It's a photo of a laptop and a cup of coffee. If you have any other questions or need assistance, feel free to ask!
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 15:07:50
+POST Data: {"post_id":"189"}
+
+Post ID: 189
+Post found: {"id":"189","user_id":"174","post_img":"post_174_1756818455_68b6ec1776155.jpg","post_text":"post","created_at":"2025-09-02 18:52:35","code_status":"0","is_anonymous":"0","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 842
+ERROR: No JSON found in AI response
+Content: I'm unable to provide a diagnosis or analyze medical images. It's important to consult a healthcare professional for an accurate diagnosis and appropriate guidance.
+
+If you need information about a condition, feel free to ask!
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 15:32:43
+POST Data: {"post_id":"189"}
+
+Post ID: 189
+Post found: {"id":"189","user_id":"174","post_img":"post_174_1756818455_68b6ec1776155.jpg","post_text":"post","created_at":"2025-09-02 18:52:35","code_status":"0","is_anonymous":"0","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 911
+AI summary generated and saved successfully
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 15:49:29
+POST Data: {"post_id":"190"}
+
+Post ID: 190
+Post found: {"id":"190","user_id":"174","post_img":"post_174_1756820534_68b6f436c2ef7.jpg","post_text":"anonymus","created_at":"2025-09-02 19:27:14","code_status":"1","is_anonymous":"0","code_content":"\ud83d\udd0d AI Analysis\n\nThe image shows a patch of skin with clusters of small, raised, and fluid-filled blisters. The surrounding area appears red and inflamed, which may indicate a skin condition or infection.","code_language":"AI Analysis","tags":""}
+Returning existing AI summary
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 15:49:31
+POST Data: {"post_id":"189"}
+
+Post ID: 189
+Post found: {"id":"189","user_id":"174","post_img":"post_174_1756818455_68b6ec1776155.jpg","post_text":"post","created_at":"2025-09-02 18:52:35","code_status":"1","is_anonymous":"0","code_content":"\ud83d\udd0d AI Analysis\n\nThis image shows a patch of skin with clustered blisters on a red, inflamed background. The blisters appear fluid-filled, indicating a possible skin condition like shingles or herpes. The surrounding skin looks irritated and swollen. For diagnosis or treatment, consulting with a healthcare professional is recommended.","code_language":"AI Analysis","tags":""}
+Returning existing AI summary
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 15:49:33
+POST Data: {"post_id":"188"}
+
+Post ID: 188
+Post found: {"id":"188","user_id":"174","post_img":"post_174_1756813551_68b6d8ef72773.jpg","post_text":"what wrong with my eyes","created_at":"2025-09-02 17:30:51","code_status":"1","is_anonymous":"0","code_content":"Condition: Jaundice\n\nAccuracy: 85%\n\nPrecautions:\nRegular liver function tests\nHealthy diet\n\nWhat to Avoid:\nAlcohol consumption\nHigh-fat foods\n\nGeneral Info:\nJaundice is a condition characterized by the yellowing of the skin and eyes, often due to liver dysfunction or bile duct obstruction.","code_language":"AI Analysis","tags":""}
+Returning existing AI summary
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 15:49:39
+POST Data: {"post_id":"184"}
+
+Post ID: 184
+Post found: {"id":"184","user_id":"174","post_img":"post_174_1756812040_68b6d308340f8.jpg","post_text":"i dunno","created_at":"2025-09-02 17:05:40","code_status":"1","is_anonymous":"1","code_content":"Condition: Jaundice\n\nAccuracy: 85%\n\nPrecautions:\nRegular check-ups\nHealthy diet\n\nWhat to Avoid:\nAlcohol\nUnprescribed medication\n\nGeneral Info:\nJaundice is characterized by yellowing of the skin and eyes, usually caused by high bilirubin levels due to liver conditions.","code_language":"AI Analysis","tags":""}
+Returning existing AI summary
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 15:49:37
+POST Data: {"post_id":"186"}
+
+Post ID: 186
+Post found: {"id":"186","user_id":"174","post_img":"post_174_1756813441_68b6d88132b0a.jpg","post_text":"uhzjz","created_at":"2025-09-02 17:29:01","code_status":"0","is_anonymous":"0","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 780
+AI summary generated and saved successfully
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 15:49:35
+POST Data: {"post_id":"187"}
+
+Post ID: 187
+Post found: {"id":"187","user_id":"174","post_img":"post_174_1756813484_68b6d8accc5ce.jpg","post_text":"isjzj","created_at":"2025-09-02 17:29:44","code_status":"0","is_anonymous":"0","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 873
+AI summary generated and saved successfully
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 15:53:08
+POST Data: {"post_id":"190"}
+
+Post ID: 190
+Post found: {"id":"190","user_id":"174","post_img":"post_174_1756820534_68b6f436c2ef7.jpg","post_text":"anonymus","created_at":"2025-09-02 19:27:14","code_status":"1","is_anonymous":"0","code_content":"\ud83d\udd0d AI Analysis\n\nThe image shows a patch of skin with clusters of small, raised, and fluid-filled blisters. The surrounding area appears red and inflamed, which may indicate a skin condition or infection.","code_language":"AI Analysis","tags":""}
+Returning existing AI summary
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 15:53:10
+POST Data: {"post_id":"189"}
+
+Post ID: 189
+Post found: {"id":"189","user_id":"174","post_img":"post_174_1756818455_68b6ec1776155.jpg","post_text":"post","created_at":"2025-09-02 18:52:35","code_status":"1","is_anonymous":"0","code_content":"\ud83d\udd0d AI Analysis\n\nThis image shows a patch of skin with clustered blisters on a red, inflamed background. The blisters appear fluid-filled, indicating a possible skin condition like shingles or herpes. The surrounding skin looks irritated and swollen. For diagnosis or treatment, consulting with a healthcare professional is recommended.","code_language":"AI Analysis","tags":""}
+Returning existing AI summary
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 15:54:15
+POST Data: {"post_id":"190"}
+
+Post ID: 190
+Post found: {"id":"190","user_id":"174","post_img":"post_174_1756820534_68b6f436c2ef7.jpg","post_text":"anonymus","created_at":"2025-09-02 19:27:14","code_status":"1","is_anonymous":"0","code_content":"\ud83d\udd0d AI Analysis\n\nThe image shows a patch of skin with clusters of small, raised, and fluid-filled blisters. The surrounding area appears red and inflamed, which may indicate a skin condition or infection.","code_language":"AI Analysis","tags":""}
+Returning existing AI summary
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 16:35:29
+POST Data: {"post_id":"191"}
+
+Post ID: 191
+Post found: {"id":"191","user_id":"174","post_img":"post_174_1756821931_68b6f9abcbcdc.jpg","post_text":"what is this","created_at":"2025-09-02 19:50:31","code_status":"0","is_anonymous":"0","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 316
+ERROR: AI analysis request failed
+HTTP Code: 402
+Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 249. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_31sHRnVrLhA9uJWX7xf8ihoHDbT"}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 17:22:15
+POST Data: {"post_id":"191"}
+
+Post ID: 191
+Post found: {"id":"191","user_id":"174","post_img":"post_174_1756821931_68b6f9abcbcdc.jpg","post_text":"what is this","created_at":"2025-09-02 19:50:31","code_status":"0","is_anonymous":"0","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 315
+Insufficient credits for AI analysis. Using fallback message.
+Summary saved successfully
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-02 17:23:12
+POST Data: {"post_id":"192"}
+
+Post ID: 192
+Post found: {"id":"192","user_id":"174","post_img":"post_174_1756822469_68b6fbc50b203.jpg","post_text":"hvvjgfbjgf","created_at":"2025-09-02 19:59:29","code_status":"0","is_anonymous":"0","code_content":"","code_language":"","tags":""}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 402
+cURL Error: 
+Raw Response Length: 315
+Insufficient credits for AI analysis. Using fallback message.
+Summary saved successfully
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-03 01:23:47
+POST Data: {"post_id":"219"}
+
+Post ID: 219
+Post found: {"id":"219","user_id":"174","post_img":"post_174_1756855400_68b77c6849452.jpg","post_text":"hhhhh","created_at":"2025-09-03 05:08:20","code_status":"0","is_anonymous":"0","code_content":"","code_language":"","tags":"","spoiler":"0"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 805
+ERROR: No JSON found in AI response
+Content: I'm unable to analyze medical images directly. However, I can provide some general information if you describe the condition or symptoms.
+
+For specific medical advice or diagnosis, please consult a healthcare professional.
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-03 01:23:44
+POST Data: {"post_id":"219"}
+
+Post ID: 219
+Post found: {"id":"219","user_id":"174","post_img":"post_174_1756855400_68b77c6849452.jpg","post_text":"hhhhh","created_at":"2025-09-03 05:08:20","code_status":"0","is_anonymous":"0","code_content":"","code_language":"","tags":"","spoiler":"0"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 200
+cURL Error: 
+Raw Response Length: 1590
+AI summary generated and saved successfully
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 01:50:35
+POST Data: {"post_id":"161"}
+
+Post ID: 161
+Post found: {"id":"161","user_id":"187","post_img":"post_187_1757288952_68be19f8f2020.jpg","post_text":"ooi","created_at":"2025-09-08 05:34:12","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:12:16
+POST Data: {"post_id":"163"}
+
+Post ID: 163
+Post found: {"id":"163","user_id":"187","post_img":"post_187_1757292165_68be26856661f.jpg","post_text":"spoiler","created_at":"2025-09-08 06:27:45","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:12:17
+POST Data: {"post_id":"162"}
+
+Post ID: 162
+Post found: {"id":"162","user_id":"187","post_img":"post_187_1757290715_68be20dbc0afd.jpg","post_text":"oiii what happened to my eyes?","created_at":"2025-09-08 06:03:35","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:12:19
+POST Data: {"post_id":"162"}
+
+Post ID: 162
+Post found: {"id":"162","user_id":"187","post_img":"post_187_1757290715_68be20dbc0afd.jpg","post_text":"oiii what happened to my eyes?","created_at":"2025-09-08 06:03:35","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:12:19
+POST Data: {"post_id":"163"}
+
+Post ID: 163
+Post found: {"id":"163","user_id":"187","post_img":"post_187_1757292165_68be26856661f.jpg","post_text":"spoiler","created_at":"2025-09-08 06:27:45","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:12:24
+POST Data: {"post_id":"161"}
+
+Post ID: 161
+Post found: {"id":"161","user_id":"187","post_img":"post_187_1757288952_68be19f8f2020.jpg","post_text":"ooi","created_at":"2025-09-08 05:34:12","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:12:53
+POST Data: {"post_id":"162"}
+
+Post ID: 162
+Post found: {"id":"162","user_id":"187","post_img":"post_187_1757290715_68be20dbc0afd.jpg","post_text":"oiii what happened to my eyes?","created_at":"2025-09-08 06:03:35","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:12:53
+POST Data: {"post_id":"163"}
+
+Post ID: 163
+Post found: {"id":"163","user_id":"187","post_img":"post_187_1757292165_68be26856661f.jpg","post_text":"spoiler","created_at":"2025-09-08 06:27:45","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:13:12
+POST Data: {"post_id":"163"}
+
+Post ID: 163
+Post found: {"id":"163","user_id":"187","post_img":"post_187_1757292165_68be26856661f.jpg","post_text":"spoiler","created_at":"2025-09-08 06:27:45","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:13:12
+POST Data: {"post_id":"162"}
+
+Post ID: 162
+Post found: {"id":"162","user_id":"187","post_img":"post_187_1757290715_68be20dbc0afd.jpg","post_text":"oiii what happened to my eyes?","created_at":"2025-09-08 06:03:35","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:13:15
+POST Data: {"post_id":"162"}
+
+Post ID: 162
+Post found: {"id":"162","user_id":"187","post_img":"post_187_1757290715_68be20dbc0afd.jpg","post_text":"oiii what happened to my eyes?","created_at":"2025-09-08 06:03:35","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:13:15
+POST Data: {"post_id":"163"}
+
+Post ID: 163
+Post found: {"id":"163","user_id":"187","post_img":"post_187_1757292165_68be26856661f.jpg","post_text":"spoiler","created_at":"2025-09-08 06:27:45","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:13:15
+POST Data: {"post_id":"161"}
+
+Post ID: 161
+Post found: {"id":"161","user_id":"187","post_img":"post_187_1757288952_68be19f8f2020.jpg","post_text":"ooi","created_at":"2025-09-08 05:34:12","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:13:20
+POST Data: {"post_id":"161"}
+
+Post ID: 161
+Post found: {"id":"161","user_id":"187","post_img":"post_187_1757288952_68be19f8f2020.jpg","post_text":"ooi","created_at":"2025-09-08 05:34:12","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:13:20
+POST Data: {"post_id":"162"}
+
+Post ID: 162
+Post found: {"id":"162","user_id":"187","post_img":"post_187_1757290715_68be20dbc0afd.jpg","post_text":"oiii what happened to my eyes?","created_at":"2025-09-08 06:03:35","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:14:12
+POST Data: {"post_id":"162"}
+
+Post ID: 162
+Post found: {"id":"162","user_id":"187","post_img":"post_187_1757290715_68be20dbc0afd.jpg","post_text":"oiii what happened to my eyes?","created_at":"2025-09-08 06:03:35","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:14:12
+POST Data: {"post_id":"161"}
+
+Post ID: 161
+Post found: {"id":"161","user_id":"187","post_img":"post_187_1757288952_68be19f8f2020.jpg","post_text":"ooi","created_at":"2025-09-08 05:34:12","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:14:15
+POST Data: {"post_id":"162"}
+
+Post ID: 162
+Post found: {"id":"162","user_id":"187","post_img":"post_187_1757290715_68be20dbc0afd.jpg","post_text":"oiii what happened to my eyes?","created_at":"2025-09-08 06:03:35","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:14:15
+POST Data: {"post_id":"161"}
+
+Post ID: 161
+Post found: {"id":"161","user_id":"187","post_img":"post_187_1757288952_68be19f8f2020.jpg","post_text":"ooi","created_at":"2025-09-08 05:34:12","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:14:20
+POST Data: {"post_id":"162"}
+
+Post ID: 162
+Post found: {"id":"162","user_id":"187","post_img":"post_187_1757290715_68be20dbc0afd.jpg","post_text":"oiii what happened to my eyes?","created_at":"2025-09-08 06:03:35","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:14:20
+POST Data: {"post_id":"161"}
+
+Post ID: 161
+Post found: {"id":"161","user_id":"187","post_img":"post_187_1757288952_68be19f8f2020.jpg","post_text":"ooi","created_at":"2025-09-08 05:34:12","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:14:23
+POST Data: {"post_id":"162"}
+
+Post ID: 162
+Post found: {"id":"162","user_id":"187","post_img":"post_187_1757290715_68be20dbc0afd.jpg","post_text":"oiii what happened to my eyes?","created_at":"2025-09-08 06:03:35","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:14:23
+POST Data: {"post_id":"161"}
+
+Post ID: 161
+Post found: {"id":"161","user_id":"187","post_img":"post_187_1757288952_68be19f8f2020.jpg","post_text":"ooi","created_at":"2025-09-08 05:34:12","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:14:42
+POST Data: {"post_id":"163"}
+
+Post ID: 163
+Post found: {"id":"163","user_id":"187","post_img":"post_187_1757292165_68be26856661f.jpg","post_text":"spoiler","created_at":"2025-09-08 06:27:45","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:14:42
+POST Data: {"post_id":"162"}
+
+Post ID: 162
+Post found: {"id":"162","user_id":"187","post_img":"post_187_1757290715_68be20dbc0afd.jpg","post_text":"oiii what happened to my eyes?","created_at":"2025-09-08 06:03:35","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:14:45
+POST Data: {"post_id":"164"}
+
+Post ID: 164
+Post found: {"id":"164","user_id":"187","post_img":"post_187_1757294078_68be2dfe986fc.jpg","post_text":"heoak","created_at":"2025-09-08 06:59:38","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:14:46
+POST Data: {"post_id":"164"}
+
+Post ID: 164
+Post found: {"id":"164","user_id":"187","post_img":"post_187_1757294078_68be2dfe986fc.jpg","post_text":"heoak","created_at":"2025-09-08 06:59:38","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:14:46
+POST Data: {"post_id":"163"}
+
+Post ID: 163
+Post found: {"id":"163","user_id":"187","post_img":"post_187_1757292165_68be26856661f.jpg","post_text":"spoiler","created_at":"2025-09-08 06:27:45","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:14:57
+POST Data: {"post_id":"164"}
+
+Post ID: 164
+Post found: {"id":"164","user_id":"187","post_img":"post_187_1757294078_68be2dfe986fc.jpg","post_text":"heoak","created_at":"2025-09-08 06:59:38","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:14:57
+POST Data: {"post_id":"163"}
+
+Post ID: 163
+Post found: {"id":"163","user_id":"187","post_img":"post_187_1757292165_68be26856661f.jpg","post_text":"spoiler","created_at":"2025-09-08 06:27:45","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:15:00
+POST Data: {"post_id":"164"}
+
+Post ID: 164
+Post found: {"id":"164","user_id":"187","post_img":"post_187_1757294078_68be2dfe986fc.jpg","post_text":"heoak","created_at":"2025-09-08 06:59:38","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:15:00
+POST Data: {"post_id":"163"}
+
+Post ID: 163
+Post found: {"id":"163","user_id":"187","post_img":"post_187_1757292165_68be26856661f.jpg","post_text":"spoiler","created_at":"2025-09-08 06:27:45","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:15:04
+POST Data: {"post_id":"163"}
+
+Post ID: 163
+Post found: {"id":"163","user_id":"187","post_img":"post_187_1757292165_68be26856661f.jpg","post_text":"spoiler","created_at":"2025-09-08 06:27:45","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:15:04
+POST Data: {"post_id":"164"}
+
+Post ID: 164
+Post found: {"id":"164","user_id":"187","post_img":"post_187_1757294078_68be2dfe986fc.jpg","post_text":"heoak","created_at":"2025-09-08 06:59:38","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:17:07
+POST Data: {"post_id":"163"}
+
+Post ID: 163
+Post found: {"id":"163","user_id":"187","post_img":"post_187_1757292165_68be26856661f.jpg","post_text":"spoiler","created_at":"2025-09-08 06:27:45","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:17:07
+POST Data: {"post_id":"164"}
+
+Post ID: 164
+Post found: {"id":"164","user_id":"187","post_img":"post_187_1757294078_68be2dfe986fc.jpg","post_text":"heoak","created_at":"2025-09-08 06:59:38","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:36:25
+POST Data: {"post_id":"164"}
+
+Post ID: 164
+Post found: {"id":"164","user_id":"187","post_img":"post_187_1757294078_68be2dfe986fc.jpg","post_text":"heoak","created_at":"2025-09-08 06:59:38","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:36:25
+POST Data: {"post_id":"163"}
+
+Post ID: 163
+Post found: {"id":"163","user_id":"187","post_img":"post_187_1757292165_68be26856661f.jpg","post_text":"spoiler","created_at":"2025-09-08 06:27:45","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:36:25
+POST Data: {"post_id":"163"}
+
+Post ID: 163
+Post found: {"id":"163","user_id":"187","post_img":"post_187_1757292165_68be26856661f.jpg","post_text":"spoiler","created_at":"2025-09-08 06:27:45","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:36:25
+POST Data: {"post_id":"164"}
+
+Post ID: 164
+Post found: {"id":"164","user_id":"187","post_img":"post_187_1757294078_68be2dfe986fc.jpg","post_text":"heoak","created_at":"2025-09-08 06:59:38","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:43:19
+POST Data: {"post_id":"164"}
+
+Post ID: 164
+Post found: {"id":"164","user_id":"187","post_img":"post_187_1757294078_68be2dfe986fc.jpg","post_text":"heoak","created_at":"2025-09-08 06:59:38","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1","category":"general"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:43:20
+POST Data: {"post_id":"163"}
+
+Post ID: 163
+Post found: {"id":"163","user_id":"187","post_img":"post_187_1757292165_68be26856661f.jpg","post_text":"spoiler","created_at":"2025-09-08 06:27:45","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1","category":"general"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 60
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"No auth credentials found","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:43:22
+POST Data: {"post_id":"164"}
+
+Post ID: 164
+Post found: {"id":"164","user_id":"187","post_img":"post_187_1757294078_68be2dfe986fc.jpg","post_text":"heoak","created_at":"2025-09-08 06:59:38","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1","category":"general"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:43:22
+POST Data: {"post_id":"163"}
+
+Post ID: 163
+Post found: {"id":"163","user_id":"187","post_img":"post_187_1757292165_68be26856661f.jpg","post_text":"spoiler","created_at":"2025-09-08 06:27:45","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1","category":"general"}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:45:53
+POST Data: {"post_id":"164"}
+
+Post ID: 164
+Post found: {"id":"164","user_id":"187","post_img":"post_187_1757294078_68be2dfe986fc.jpg","post_text":"heoak","created_at":"2025-09-08 06:59:38","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1","category":"general","possible_conditions":null}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}
+=== REFRESH AI SUMMARY REQUEST ===
+Timestamp: 2025-09-08 03:45:57
+POST Data: {"post_id":"163"}
+
+Post ID: 163
+Post found: {"id":"163","user_id":"187","post_img":"post_187_1757292165_68be26856661f.jpg","post_text":"spoiler","created_at":"2025-09-08 06:27:45","code_status":"0","code_content":"","code_language":"","tags":"","post_privacy":"0","spoiler":"1","category":"general","possible_conditions":null}
+Generating new AI summary
+Sending request to OpenRouter API...
+HTTP Code: 401
+cURL Error: 
+Raw Response Length: 50
+ERROR: AI analysis request failed
+HTTP Code: 401
+Response: {"error":{"message":"User not found.","code":401}}

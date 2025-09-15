@@ -1,0 +1,1 @@
+ALTER TABLE `doctor_verification` ADD COLUMN `consultation_fee` DECIMAL(10,2) NOT NULL DEFAULT 150.00 AFTER `notes`;

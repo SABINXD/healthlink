@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_light">
+
+    <!-- Specialty Filter -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="12dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/specialtyChipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:checkedChip="@+id/chipAllSpecialties">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAllSpecialties"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Doctors"
+                android:tag="all"
+                style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipCardiologist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cardiologist"
+                android:tag="cardiologist"
+                style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipDermatologist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dermatologist"
+                android:tag="dermatologist"
+                style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipPediatrician"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pediatrician"
+                android:tag="pediatrician"
+                style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipNeurologist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Neurologist"
+                android:tag="neurologist"
+                style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipOrthopedic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orthopedic"
+                android:tag="orthopedic"
+                style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipPsychiatrist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Psychiatrist"
+                android:tag="psychiatrist"
+                style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+    <!-- Doctors List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/doctorsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false" />
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.healthlink">
+    <!-- Internet access -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config">
+
+        <!-- File Provider for image sharing -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <!-- Launcher Activity -->
+        <activity
+            android:name="com.example.healthlink.HomePage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Authentication & Profile Activities -->
+        <activity android:name="com.example.healthlink.SignUpActivity" />
+        <activity android:name="com.example.healthlink.ChangePasswordActivity" />
+        <activity android:name="com.example.healthlink.ForgetPasswordActivity" />
+        <activity android:name="com.example.healthlink.ResetPasswordActivity" />
+        <activity android:name="com.example.healthlink.EnterResetCodeActivity" />
+        <activity android:name="com.example.healthlink.EnterVerificationCodeActivity" />
+        <activity android:name="com.example.healthlink.EditProfileInfoActivity" />
+        <activity android:name="com.example.healthlink.AccountCenterActivity" />
+        <activity android:name="com.example.healthlink.ProfileActivity"
+            android:theme="@style/Theme.CodeKendra" />
+        <activity android:name="com.example.healthlink.UserProfileActivity"/>
+
+        <!-- Post & Feed Activities -->
+        <activity android:name="com.example.healthlink.PostActivity" />
+        <activity android:name="com.example.healthlink.FeedActivity" />
+        <activity android:name="com.example.healthlink.CreatePostActivity"/>
+        <activity android:name="com.example.healthlink.PostDetailsActivity"/>
+
+
+        <!-- Navigation & Utility Activities -->
+        <activity android:name="com.example.healthlink.LoginActivity" />
+        <activity android:name="com.example.healthlink.SearchActivity" />
+        <activity android:name="com.example.healthlink.ChatActivity" />
+        <activity android:name="com.example.healthlink.ChatListActivity" />
+        <activity android:name="com.example.healthlink.CommentActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CodeKendra" />
+        <activity android:name="com.example.healthlink.CodeViewActivity"/>
+        <activity android:name="com.example.healthlink.NotificationsActivity"/>
+        <activity android:name="com.example.healthlink.AppointmentsActivity" />
+        <activity android:name="com.example.healthlink.AppointmentDetailActivity" />
+        <activity android:name="com.example.healthlink.DoctorsListActivity" />
+        <activity android:name="com.example.healthlink.BookAppointmentActivity"/>
+        <activity android:name="com.example.healthlink.DoctorVerificationActivity"/>
+        <activity android:name="com.example.healthlink.EmergencyActivity"/>
+
+
+
+
+
+    </application>
+</manifest>

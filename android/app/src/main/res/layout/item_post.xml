@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="6dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp"
+    app:strokeWidth="0dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Post Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilePic"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/profile_placeholder"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#E5E7EB" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1F2937"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium"
+                    tools:text="Jennifer Lee" />
+
+                <TextView
+                    android:id="@+id/postTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6B7280"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="2dp"
+                    tools:text="3 hours ago" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/postOptions"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_more_vert"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="4dp"
+                android:visibility="gone"
+                app:tint="#9CA3AF" />
+
+        </LinearLayout>
+
+        <!-- Post Title (Large) -->
+        <TextView
+            android:id="@+id/postTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#1F2937"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="12dp"
+            tools:text="Skin rash that won't go away - any ideas?" />
+
+        <!-- Post Content and Images Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <!-- Main Content (Left side - takes most space) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:id="@+id/postDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="6dp"
+                    android:textColor="#374151"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginBottom="16dp"
+                    tools:text="I've had this rash on my forearm for about 3 weeks now. It started as small red bumps and has spread slightly. It's itchy but not painful. I've tried over-the-counter hydrocortisone cream but it hasn't helped much. Any ideas what this could be?" />
+
+                <!-- Tags -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/tagsRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp" />
+
+            </LinearLayout>
+
+            <!-- Small Images (Right side) -->
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="top">
+
+                <FrameLayout
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/postImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/rounded_image_background"
+                        android:visibility="gone"
+                        tools:src="@tools:sample/avatars" />
+
+                    <!-- Spoiler Overlay for Small Image -->
+                    <LinearLayout
+                        android:id="@+id/spoilerContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/spoiler_overlay_background"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_eye_off"
+                            android:layout_marginBottom="4dp"
+                            app:tint="#FFFFFF" />
+
+                        <Button
+                            android:id="@+id/unblurButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp"
+                            android:text="View"
+                            android:textColor="#1F2937"
+                            android:textSize="10sp"
+                            android:backgroundTint="#FFFFFF"
+                            android:fontFamily="sans-serif-medium"
+                            app:cornerRadius="6dp" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <!-- Second small image placeholder -->
+                <ImageView
+                    android:id="@+id/postImage2"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_image_background"
+                    android:visibility="gone"
+                    tools:src="@tools:sample/avatars" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- AI Summary Card (Auto-generated, no button) -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/ai_summary_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#E0E7FF"
+            app:cardBackgroundColor="#F0F4FF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+
+                        app:tint="#4F46E5"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="AI Summary"
+                        android:textColor="#4F46E5"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ProgressBar
+                        android:id="@+id/ai_summary_progress"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:indeterminateTint="#4F46E5"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ai_summary_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="3dp"
+                    android:textColor="#374151"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    tools:text="The user describes a persistent itchy rash on their forearm that has lasted for 3 weeks. The rash consists of small red bumps that have spread slightly. Over-the-counter hydrocortisone cream has not provided relief." />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start">
+
+            <LinearLayout
+                android:id="@+id/likeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="12dp"
+                android:layout_marginEnd="24dp">
+
+                <ImageView
+                    android:id="@+id/likeIcon"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginEnd="6dp"
+                    android:src="@drawable/like_icon"
+                    app:tint="#6B7280" />
+
+                <TextView
+                    android:id="@+id/likeCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6B7280"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-medium"
+                    tools:text="15" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/commentLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="12dp"
+                android:layout_marginEnd="24dp">
+
+                <ImageView
+                    android:id="@+id/commentIcon"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginEnd="6dp"
+                    android:src="@drawable/comment_icon"
+                    app:tint="#6B7280" />
+
+                <TextView
+                    android:id="@+id/commentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6B7280"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-medium"
+                    tools:text="8 replies" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

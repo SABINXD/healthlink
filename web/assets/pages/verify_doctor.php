@@ -1,0 +1,714 @@
+<!-- Main Content -->
+<section class="main-content">
+  <div class="container">
+    <div class="verification-container">
+      <div class="verification-header">
+        <h2><i class="fas fa-user-md"></i> Doctor Verification Form</h2>
+        <p>Please provide all the necessary information and documents for verification. Your NMC number will be officially checked with the NMC council.</p>
+      </div>
+      <div class="verification-body">
+        <div class="success-message" id="successMessage">
+          <i class="fas fa-check-circle"></i> Your verification application has been submitted successfully! We will review your documents and verify your NMC number with the NMC council. You will receive a notification once the process is complete.
+        </div>
+        <form id="verificationForm" class="verification-form" method="post" enctype="multipart/form-data" action="assets/php/actions.php?verifydoctor">
+          <!-- Personal Information Section -->
+          <div class="form-section">
+            <h3 class="form-section-title">
+              <i class="fas fa-user"></i> Personal Information
+            </h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Enter your full name as per documents" required>
+              </div>
+              <div class="form-group">
+                <label for="otherName">Other Name (if any)</label>
+                <input type="text" id="otherName" name="otherName" class="form-control" placeholder="Any other names you use professionally">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="dateOfBirth">Date of Birth *</label>
+                <input type="date" id="dateOfBirth" name="dateOfBirth" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender *</label>
+                <select id="gender" name="gender" class="form-control" required>
+                  <option value="">Select gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nationality">Nationality *</label>
+                <input type="text" id="nationality" name="nationality" class="form-control" placeholder="Your nationality" required>
+              </div>
+              <div class="form-group">
+                <label for="languages">Languages Spoken</label>
+                <input type="text" id="languages" name="languages" class="form-control" placeholder="e.g., English, Spanish, French">
+              </div>
+            </div>
+          </div>
+          <!-- Professional Information Section -->
+          <div class="form-section">
+            <h3 class="form-section-title">
+              <i class="fas fa-stethoscope"></i> Professional Information
+            </h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="doctorType">Doctor Type *</label>
+                <select id="doctorType" name="doctorType" class="form-control" required>
+                  <option value="">Select doctor type</option>
+                  <option value="general-practitioner">General Practitioner</option>
+                  <option value="specialist">Specialist</option>
+                  <option value="surgeon">Surgeon</option>
+                  <option value="consultant">Consultant</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="specialty">Specialty *</label>
+                <input type="text" id="specialty" name="specialty" class="form-control" placeholder="Your medical specialty" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="yearsOfExperience">Years of Experience *</label>
+                <input type="number" id="yearsOfExperience" name="yearsOfExperience" class="form-control" placeholder="Number of years in practice" min="0" required>
+              </div>
+              <div class="form-group">
+                <label for="medicalSchool">Medical School *</label>
+                <input type="text" id="medicalSchool" name="medicalSchool" class="form-control" placeholder="Name of your medical school" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="graduationYear">Year of Graduation *</label>
+                <input type="number" id="graduationYear" name="graduationYear" class="form-control" placeholder="Year you graduated from medical school" min="1950" max="2023" required>
+              </div>
+              <div class="form-group">
+                <label for="registrationNumber">Medical Registration Number *</label>
+                <input type="text" id="registrationNumber" name="registrationNumber" class="form-control" placeholder="Your medical registration number" required>
+              </div>
+            </div>
+          </div>
+          <!-- NMC Verification Section -->
+          <div class="form-section">
+            <h3 class="form-section-title">
+              <i class="fas fa-certificate"></i> NMC Verification
+            </h3>
+
+            <div class="nmc-notice">
+              <h3><i class="fas fa-info-circle"></i> Important Notice</h3>
+              <p>Your NMC number will be officially checked with the NMC council as part of the verification process. Please ensure that all information provided is accurate and matches your official records.</p>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nmcNumber">NMC License Number *</label>
+                <input type="text" id="nmcNumber" name="nmcNumber" class="form-control" placeholder="Your NMC license number" required>
+              </div>
+              <div class="form-group">
+                <label for="nmcIssueDate">NMC Issue Date *</label>
+                <input type="date" id="nmcIssueDate" name="nmcIssueDate" class="form-control" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nmcExpiryDate">NMC Expiry Date *</label>
+                <input type="date" id="nmcExpiryDate" name="nmcExpiryDate" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="nmcStatus">NMC Status *</label>
+                <select id="nmcStatus" name="nmcStatus" class="form-control" required>
+                  <option value="">Select status</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+                  <option value="suspended">Suspended</option>
+                  <option value="expired">Expired</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <!-- Practice Information Section -->
+          <div class="form-section">
+            <h3 class="form-section-title">
+              <i class="fas fa-hospital"></i> Practice Information
+            </h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="hospitalName">Hospital/Clinic Name *</label>
+                <input type="text" id="hospitalName" name="hospitalName" class="form-control" placeholder="Name of your current hospital or clinic" required>
+              </div>
+              <div class="form-group">
+                <label for="department">Department *</label>
+                <input type="text" id="department" name="department" class="form-control" placeholder="Your department or unit" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="hospitalAddress">Hospital Address *</label>
+                <input type="text" id="hospitalAddress" name="hospitalAddress" class="form-control" placeholder="Full address of your hospital or clinic" required>
+              </div>
+              <div class="form-group">
+                <label for="hospitalCity">City *</label>
+                <input type="text" id="hospitalCity" name="hospitalCity" class="form-control" placeholder="City where your hospital is located" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="hospitalPhone">Hospital Phone</label>
+                <input type="tel" id="hospitalPhone" name="hospitalPhone" class="form-control" placeholder="Hospital contact number">
+              </div>
+              <div class="form-group">
+                <label for="hospitalEmail">Hospital Email</label>
+                <input type="email" id="hospitalEmail" name="hospitalEmail" class="form-control" placeholder="Hospital email address">
+              </div>
+            </div>
+          </div>
+          <!-- Certificate Upload Section -->
+          <div class="form-section">
+            <h3 class="form-section-title">
+              <i class="fas fa-file-upload"></i> Certificate Uploads
+            </h3>
+
+            <div class="form-group">
+              <label>Medical Certificate (Front and Back) *</label>
+              <div class="file-upload-container">
+                <div class="file-upload" onclick="document.getElementById('certFront').click()">
+                  <i class="fas fa-cloud-upload-alt"></i>
+                  <p>Upload Front Side</p>
+                  <small>JPG, PNG, PDF up to 5MB</small>
+                  <input type="file" id="certFront" name="certFront" class="file-input" accept=".jpg,.jpeg,.png,.pdf">
+                </div>
+                <div class="file-upload" onclick="document.getElementById('certBack').click()">
+                  <i class="fas fa-cloud-upload-alt"></i>
+                  <p>Upload Back Side</p>
+                  <small>JPG, PNG, PDF up to 5MB</small>
+                  <input type="file" id="certBack" name="certBack" class="file-input" accept=".jpg,.jpeg,.png,.pdf">
+                </div>
+              </div>
+              <div class="file-preview" id="certPreview"></div>
+            </div>
+            <div class="form-group">
+              <label>NMC Verified Certificate *</label>
+              <div class="file-upload" onclick="document.getElementById('nmcCert').click()">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>Upload NMC Certificate</p>
+                <small>JPG, PNG, PDF up to 5MB</small>
+                <input type="file" id="nmcCert" name="nmcCert" class="file-input" accept=".jpg,.jpeg,.png,.pdf">
+              </div>
+              <div class="file-preview" id="nmcCertPreview"></div>
+            </div>
+          </div>
+          <!-- Citizenship Proof Section -->
+          <div class="form-section">
+            <h3 class="form-section-title">
+              <i class="fas fa-passport"></i> Citizenship Proof
+            </h3>
+
+            <div class="form-group">
+              <label>Citizenship Document with Photo Page *</label>
+              <div class="file-upload" onclick="document.getElementById('citizenship').click()">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>Upload Citizenship Document</p>
+                <small>JPG, PNG, PDF up to 5MB</small>
+                <input type="file" id="citizenship" name="citizenship" class="file-input" accept=".jpg,.jpeg,.png,.pdf">
+              </div>
+              <div class="file-preview" id="citizenshipPreview"></div>
+            </div>
+          </div>
+          <!-- Contact Information Section -->
+          <div class="form-section">
+            <h3 class="form-section-title">
+              <i class="fas fa-address-card"></i> Contact Information
+            </h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Your email address" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Your phone number" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="address">Full Address *</label>
+              <textarea id="address" name="address" class="form-control" placeholder="Your full residential address" required></textarea>
+            </div>
+          </div>
+          <!-- Declaration Section -->
+          <div class="form-section">
+            <h3 class="form-section-title">
+              <i class="fas fa-clipboard-check"></i> Declaration
+            </h3>
+
+            <div class="checkbox-group">
+              <input type="checkbox" id="declaration1" required>
+              <label for="declaration1">I hereby declare that all the information provided in this form is true and correct to the best of my knowledge.</label>
+            </div>
+
+            <div class="checkbox-group">
+              <input type="checkbox" id="declaration2" required>
+              <label for="declaration2">I understand that my NMC number will be officially checked with the NMC council as part of the verification process.</label>
+            </div>
+
+            <div class="checkbox-group">
+              <input type="checkbox" id="declaration3" required>
+              <label for="declaration3">I authorize healthlink to verify my credentials and contact the relevant authorities for verification purposes.</label>
+            </div>
+
+            <div class="checkbox-group">
+              <input type="checkbox" id="declaration4" required>
+              <label for="declaration4">I understand that providing false information may result in rejection of my verification application and potential legal action.</label>
+            </div>
+          </div>
+          <!-- Form Actions -->
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Submit Verification Application
+            </button>
+            <button type="button" class="btn btn-outline" onclick="resetForm()">Reset Form</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Custom styles for the form */
+  :root {
+    --primary: #2c7a7b;
+    --primary-light: #4fd1c5;
+    --secondary: #4a5568;
+    --light: #f7fafc;
+    --dark: #2d3748;
+    --danger: #e53e3e;
+    --success: #38a169;
+    --border: #e2e8f0;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --verified: #3182ce;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .verification-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px var(--shadow);
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+
+  .verification-header {
+    background-color: var(--light);
+    padding: 30px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .verification-header h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .verification-header p {
+    color: var(--secondary);
+  }
+
+  .verification-body {
+    padding: 30px;
+  }
+
+  .form-section {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .form-section:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .form-section-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .form-section-title i {
+    color: var(--primary-light);
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--dark);
+  }
+
+  .form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.3s;
+  }
+
+  .form-control:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(79, 209, 197, 0.2);
+  }
+
+  textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .file-upload-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .file-upload {
+    border: 2px dashed var(--border);
+    border-radius: 6px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 15px;
+  }
+
+  .file-upload:hover {
+    border-color: var(--primary);
+    background-color: rgba(79, 209, 197, 0.05);
+  }
+
+  .file-upload i {
+    font-size: 48px;
+    color: var(--primary-light);
+    margin-bottom: 10px;
+  }
+
+  .file-upload p {
+    margin-bottom: 5px;
+    color: var(--dark);
+  }
+
+  .file-upload small {
+    color: var(--secondary);
+  }
+
+  .file-input {
+    display: none;
+  }
+
+  .file-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .file-preview-item {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  .file-preview-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .file-preview-item .remove {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .nmc-notice {
+    background-color: #e6fffa;
+    border-left: 4px solid var(--primary-light);
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+
+  .nmc-notice h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .nmc-notice p {
+    color: var(--secondary);
+    font-size: 14px;
+  }
+
+  .checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .checkbox-group input {
+    margin-right: 10px;
+    margin-top: 3px;
+  }
+
+  .checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+    color: var(--secondary);
+  }
+
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .success-message {
+    background-color: var(--success);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    display: none;
+  }
+
+  .success-message.show {
+    display: block;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .btn-primary {
+    background-color: var(--primary);
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: #2a6b6c;
+  }
+
+  .btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+  }
+
+  .btn-outline:hover {
+    background-color: var(--primary);
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+
+    .form-row,
+    .file-upload-container {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  // File upload functionality
+  function setupFileUpload(inputId, previewId) {
+    const input = document.getElementById(inputId);
+    const preview = document.getElementById(previewId);
+
+    input.addEventListener('change', function(e) {
+      const files = e.target.files;
+
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        const reader = new FileReader();
+
+        reader.onload = function(event) {
+          const fileItem = document.createElement('div');
+          fileItem.className = 'file-preview-item';
+
+          if (file.type.startsWith('image/')) {
+            const img = document.createElement('img');
+            img.src = event.target.result;
+            fileItem.appendChild(img);
+          } else {
+            // For PDF files, show a placeholder
+            const placeholder = document.createElement('div');
+            placeholder.className = 'document-placeholder';
+            placeholder.innerHTML = `
+                            <i class="fas fa-file-pdf"></i>
+                            <p>${file.name}</p>
+                        `;
+            fileItem.appendChild(placeholder);
+          }
+
+          const removeBtn = document.createElement('button');
+          removeBtn.className = 'remove';
+          removeBtn.innerHTML = '<i class="fas fa-times"></i>';
+          removeBtn.onclick = function() {
+            fileItem.remove();
+          };
+
+          fileItem.appendChild(removeBtn);
+          preview.appendChild(fileItem);
+        };
+
+        reader.readAsDataURL(file);
+      }
+    });
+  }
+
+  // Initialize file uploads
+  setupFileUpload('certFront', 'certPreview');
+  setupFileUpload('certBack', 'certPreview');
+  setupFileUpload('nmcCert', 'nmcCertPreview');
+  setupFileUpload('citizenship', 'citizenshipPreview');
+
+  // Form submission
+  // Form submission
+  document.getElementById('verificationForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Basic validation
+    const requiredFields = [
+      'fullName', 'dateOfBirth', 'gender', 'nationality',
+      'doctorType', 'specialty', 'yearsOfExperience', 'medicalSchool',
+      'graduationYear', 'registrationNumber', 'nmcNumber', 'nmcIssueDate',
+      'nmcExpiryDate', 'nmcStatus', 'hospitalName', 'department',
+      'hospitalAddress', 'hospitalCity', 'email', 'phone', 'address'
+    ];
+
+    let isValid = true;
+    requiredFields.forEach(fieldId => {
+      const field = document.getElementById(fieldId);
+      if (!field.value.trim()) {
+        field.style.borderColor = 'var(--danger)';
+        isValid = false;
+      } else {
+        field.style.borderColor = '';
+      }
+    });
+
+    // Check if files are uploaded
+    const certFront = document.getElementById('certFront').files.length;
+    const certBack = document.getElementById('certBack').files.length;
+    const nmcCert = document.getElementById('nmcCert').files.length;
+    const citizenship = document.getElementById('citizenship').files.length;
+
+    if (!certFront || !certBack || !nmcCert || !citizenship) {
+      isValid = false;
+      alert('Please upload all required documents');
+    }
+
+    // Check declarations
+    const declarations = [
+      'declaration1', 'declaration2', 'declaration3', 'declaration4'
+    ];
+
+    declarations.forEach(decId => {
+      const dec = document.getElementById(decId);
+      if (!dec.checked) {
+        isValid = false;
+      }
+    });
+
+    if (!isValid) {
+      alert('Please fill in all required fields and check all declarations');
+      return;
+    }
+
+    // If validation passes, submit the form
+    this.submit();
+  });
+  // Show success message
+  document.getElementById('successMessage').classList.add('show');
+
+  // Scroll to top of form
+  document.querySelector('.verification-container').scrollIntoView({
+    behavior: 'smooth'
+  });
+
+  // Reset form after 5 seconds
+  setTimeout(() => {
+    resetForm();
+    document.getElementById('successMessage').classList.remove('show');
+  }, 5000);
+
+
+  // Reset form function
+  function resetForm() {
+    document.getElementById('verificationForm').reset();
+    document.getElementById('certPreview').innerHTML = '';
+    document.getElementById('nmcCertPreview').innerHTML = '';
+    document.getElementById('citizenshipPreview').innerHTML = '';
+
+    // Reset field border colors
+    const fields = document.querySelectorAll('.form-control');
+    fields.forEach(field => {
+      field.style.borderColor = '';
+    });
+  }
+</script>
