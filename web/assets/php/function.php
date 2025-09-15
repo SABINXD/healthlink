@@ -732,7 +732,7 @@ function showError($field)
 
         function generateAISummary($caption = "", $imagePath = "")
         {
-            $apiKey = "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";
+            $apiKey = "YOUR-API-KEY";
 
             // Prepare image data if available
             $imageData = '';
